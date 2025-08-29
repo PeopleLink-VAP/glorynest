@@ -68,9 +68,9 @@ const AtAGlance = () => {
           </div>
 
           <div className="text-center">
-            <Button variant="default" size="lg" asChild>
-              <Link to="/rooms">Book Your Stay</Link>
-            </Button>
+            <Button size="lg" className="h-14 px-8 bg-gradient-to-r from-primary via-secondary to-accent hover:from-primary/90 hover:via-secondary/90 hover:to-accent/90 text-white font-bold shadow-xl border-0 transition-all duration-300 hover:scale-105" asChild>
+                <Link to="/booking">Book Your Stay</Link>
+              </Button>
           </div>
         </div>
       </div>

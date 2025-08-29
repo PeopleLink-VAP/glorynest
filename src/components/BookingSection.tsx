@@ -17,9 +17,9 @@ const BookingSection = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16 animate-fade-up">
-            <div className="inline-flex items-center space-x-2 glass-card px-4 py-2 mb-6">
+            <div className="inline-flex items-center space-x-2 glass-card-luxury px-6 py-3 mb-6">
               <Sparkles className="w-5 h-5 text-primary" />
-              <span className="text-sm font-medium">Ready to Experience Glory Nest?</span>
+              <span className="text-sm font-semibold text-foreground">Ready to Experience Glory Nest?</span>
             </div>
             <h2 className="font-display text-4xl md:text-6xl font-normal text-foreground mb-6">
               Book Your Private Villa Sanctuary
@@ -32,7 +32,7 @@ const BookingSection = () => {
 
           {/* Villa Features */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-            <div className="glass-card p-6 text-center group hover:scale-105 transition-all duration-300 animate-fade-up">
+            <div className="glass-card-luxury p-8 text-center group hover:scale-105 transition-all duration-300 animate-fade-up">
               <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-smooth">
                 <Home className="w-8 h-8 text-primary" />
               </div>
@@ -40,7 +40,7 @@ const BookingSection = () => {
               <p className="font-sans text-muted-foreground text-sm">2 bedrooms, full kitchen, living room & private pool</p>
             </div>
             
-            <div className="glass-card p-6 text-center group hover:scale-105 transition-all duration-300 animate-fade-up" style={{animationDelay: '0.1s'}}>
+            <div className="glass-card-luxury p-8 text-center group hover:scale-105 transition-all duration-300 animate-fade-up" style={{animationDelay: '0.1s'}}>
               <div className="w-16 h-16 bg-secondary/10 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:bg-secondary/20 transition-smooth">
                 <Users className="w-8 h-8 text-secondary" />
               </div>
@@ -48,7 +48,7 @@ const BookingSection = () => {
               <p className="font-sans text-muted-foreground text-sm">Up to 6 guests, kid-friendly amenities included</p>
             </div>
             
-            <div className="glass-card p-6 text-center group hover:scale-105 transition-all duration-300 animate-fade-up" style={{animationDelay: '0.2s'}}>
+            <div className="glass-card-luxury p-8 text-center group hover:scale-105 transition-all duration-300 animate-fade-up" style={{animationDelay: '0.2s'}}>
               <div className="w-16 h-16 bg-accent/10 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:bg-accent/20 transition-smooth">
                 <Calendar className="w-8 h-8 text-accent" />
               </div>
@@ -59,7 +59,7 @@ const BookingSection = () => {
 
           {/* Main CTA */}
           <div className="text-center space-y-8 animate-fade-up" style={{animationDelay: '0.3s'}}>
-            <div className="glass-card p-8 max-w-2xl mx-auto relative overflow-hidden">
+            <div className="glass-card-luxury p-10 max-w-2xl mx-auto relative overflow-hidden">
               <div className="absolute top-4 right-4 opacity-10">
                 <img src={sparrowIcon} alt="" className="w-8 h-8" />
               </div>
@@ -76,9 +76,9 @@ const BookingSection = () => {
                 <ContactDialog variant="booking">
                   <Button 
                     size="lg" 
-                    className="min-w-48 h-14 text-lg font-semibold bg-gradient-to-r from-primary via-secondary to-accent hover:from-primary/90 hover:via-secondary/90 hover:to-accent/90 shadow-xl"
+                    className="min-w-48 h-16 text-lg font-bold bg-gradient-to-r from-primary via-secondary to-accent hover:from-primary/90 hover:via-secondary/90 hover:to-accent/90 shadow-2xl text-white border-0 transition-all duration-300 hover:scale-105"
                   >
-                    <Calendar className="w-5 h-5 mr-2" />
+                    <Calendar className="w-6 h-6 mr-3" />
                     Book Now
                   </Button>
                 </ContactDialog>
@@ -87,7 +87,7 @@ const BookingSection = () => {
                   <Button 
                     variant="outline" 
                     size="lg" 
-                    className="min-w-48 h-14 text-lg font-semibold glass-card border-primary/30 hover:bg-primary/5"
+                    className="min-w-48 h-16 text-lg font-bold glass-card-luxury border-2 border-primary/40 hover:bg-primary/10 text-foreground hover:text-primary transition-all duration-300 hover:scale-105"
                   >
                     Ask Questions
                   </Button>

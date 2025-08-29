@@ -32,8 +32,8 @@ const Footer = () => {
             <h3 className="font-semibold text-foreground">Quick Links</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link to="/rooms" className="text-muted-foreground hover:text-primary transition-smooth">
-                  Rooms & Rates
+                <Link to="/booking" className="text-muted-foreground hover:text-primary transition-smooth">
+                  Book Now
                 </Link>
               </li>
               <li>
@@ -83,8 +83,8 @@ const Footer = () => {
               Ready to make Glory Nest your home away from home?
             </p>
             <div className="space-y-3">
-              <Button variant="default" size="sm" className="w-full" asChild>
-                <Link to="/rooms">Book Your Stay</Link>
+              <Button className="w-full h-12 bg-gradient-to-r from-primary via-secondary to-accent hover:from-primary/90 hover:via-secondary/90 hover:to-accent/90 text-white font-bold shadow-xl border-0 transition-all duration-300 hover:scale-105" asChild>
+                <Link to="/booking">Book Your Stay</Link>
               </Button>
               <Button variant="outline" size="sm" className="w-full" asChild>
                 <Link to="/contact">Contact Us</Link>
@@ -97,7 +97,7 @@ const Footer = () => {
         <div className="mt-12 pt-8 border-t border-primary/10">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-sm text-muted-foreground">
-              © 2024 Glory Nest. All rights reserved. Built with love in Hoi An.
+              © 2025 Glory Nest. All rights reserved. Built with love in Hoi An.
             </p>
             <div className="flex space-x-6 text-sm">
               <Link to="/privacy" className="text-muted-foreground hover:text-primary transition-smooth">
@@ -114,12 +114,11 @@ const Footer = () => {
       {/* Floating CTA */}
       <div className="fixed bottom-6 right-6 z-40">
         <Button 
-          variant="default" 
           size="lg" 
-          className="shadow-lg animate-float"
+          className="h-14 px-8 bg-gradient-to-r from-primary via-secondary to-accent hover:from-primary/90 hover:via-secondary/90 hover:to-accent/90 text-white font-bold shadow-2xl border-0 animate-float transition-all duration-300 hover:scale-105"
           asChild
         >
-          <Link to="/rooms">
+          <Link to="/booking">
             Book Now
           </Link>
         </Button>

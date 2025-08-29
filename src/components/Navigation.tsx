@@ -11,7 +11,7 @@ const Navigation = () => {
   const mainNavItems = [
     { href: "/", label: "Home" },
     { href: "/story", label: "Our Story" },
-    { href: "/rooms", label: "Rooms & Rates" },
+    { href: "/booking", label: "Book Now" },
     { href: "/efund", label: "E-Fund" },
     { href: "/journal", label: "Journal" },
     { href: "/contact", label: "Contact" }

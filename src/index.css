@@ -38,9 +38,10 @@
     --radius: 1rem;
     
     /* Glassmorphism Effects */
-    --glass-bg: 33 22% 93% / 0.8;
-    --glass-border: 25 85% 55% / 0.2;
-    --glass-shadow: 0 8px 32px 0 rgba(255, 138, 77, 0.15);
+    --glass-bg: 33 22% 93% / 0.85;
+    --glass-border: 25 85% 55% / 0.25;
+    --glass-shadow: 0 12px 40px 0 rgba(255, 138, 77, 0.2), 0 4px 16px 0 rgba(255, 138, 77, 0.1);
+    --glass-shadow-luxury: 0 20px 60px 0 rgba(255, 138, 77, 0.25), 0 8px 24px 0 rgba(255, 138, 77, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.2);
     
     /* Custom Gradients */
     --gradient-warm: linear-gradient(135deg, hsl(25 85% 55%), hsl(45 95% 65%));
@@ -122,14 +123,39 @@
 @layer components {
   /* Glassmorphism Components */
   .glass-card {
-    @apply backdrop-blur-md border border-primary/20 rounded-2xl;
+    @apply backdrop-blur-xl border border-primary/25 rounded-3xl;
     background: hsla(var(--glass-bg));
     box-shadow: var(--glass-shadow);
+    position: relative;
+  }
+  
+  .glass-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.3), rgba(255, 138, 77, 0.2), rgba(255, 255, 255, 0.1));
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: xor;
+    -webkit-mask-composite: xor;
+    pointer-events: none;
+  }
+  
+  .glass-card-luxury {
+    @apply backdrop-blur-2xl border-2 border-primary/30 rounded-3xl;
+    background: hsla(var(--glass-bg));
+    box-shadow: var(--glass-shadow-luxury);
+    position: relative;
   }
   
   .glass-nav {
-    @apply backdrop-blur-xl border-b border-primary/10;
+    @apply backdrop-blur-2xl border-b border-primary/15;
     background: hsla(var(--glass-bg));
+    box-shadow: 0 4px 20px 0 rgba(255, 138, 77, 0.1);
   }
   
   /* Hero Gradient */

@@ -148,9 +148,9 @@ const FAQ = () => {
                 <Button variant="default" asChild>
                   <Link to="/contact">Contact Us</Link>
                 </Button>
-                <Button variant="outline" asChild>
-                  <Link to="/rooms">Book Your Stay</Link>
-                </Button>
+                <Button variant="outline" className="h-12 px-6 border-2 border-primary/40 text-foreground hover:bg-primary/10 hover:border-primary/60 font-bold transition-all duration-300 hover:scale-105" asChild>
+                    <Link to="/booking">Book Your Stay</Link>
+                  </Button>
               </div>
             </div>
           </div>

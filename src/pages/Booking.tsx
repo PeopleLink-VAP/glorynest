@@ -81,9 +81,9 @@ const Booking = () => {
           
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center animate-fade-up">
-              <div className="inline-flex items-center space-x-2 glass-card px-4 py-2 mb-6">
+              <div className="inline-flex items-center space-x-2 glass-card-luxury px-6 py-3 mb-6">
                 <Sparkles className="w-5 h-5 text-primary" />
-                <span className="text-sm font-medium">Reserve Your Villa</span>
+                <span className="text-sm font-semibold text-foreground">Reserve Your Villa</span>
               </div>
               
               <h1 className="font-serif text-4xl md:text-6xl font-bold text-foreground mb-6">
@@ -116,7 +116,7 @@ const Booking = () => {
             
             {/* Booking Form */}
             <div className="lg:col-span-2">
-              <Card className="glass-card border-0">
+              <Card className="glass-card-luxury border-0">
                 <CardHeader>
                   <CardTitle className="font-serif text-2xl">Plan Your Stay</CardTitle>
                 </CardHeader>
@@ -215,10 +215,10 @@ const Booking = () => {
                   {/* Book Button */}
                   <ContactDialog variant="booking">
                     <Button
-                      className="w-full h-14 text-lg font-semibold bg-gradient-to-r from-primary via-secondary to-accent hover:from-primary/90 hover:via-secondary/90 hover:to-accent/90"
+                      className="w-full h-16 text-lg font-bold bg-gradient-to-r from-primary via-secondary to-accent hover:from-primary/90 hover:via-secondary/90 hover:to-accent/90 shadow-2xl text-white border-0 transition-all duration-300 hover:scale-105"
                       disabled={!selectedDates.checkin || !selectedDates.checkout || calculateNights() === 0}
                     >
-                      <CalendarIcon className="w-5 h-5 mr-2" />
+                      <CalendarIcon className="w-6 h-6 mr-3" />
                       Request Booking
                     </Button>
                   </ContactDialog>
@@ -231,7 +231,7 @@ const Booking = () => {
               
               {/* Price Summary */}
               {calculateNights() > 0 && (
-                <Card className="glass-card border-0">
+                <Card className="glass-card-luxury border-0">
                   <CardHeader>
                     <CardTitle className="text-lg">Booking Summary</CardTitle>
                   </CardHeader>
@@ -262,7 +262,7 @@ const Booking = () => {
               )}
 
               {/* Special Rates */}
-              <Card className="glass-card border-0">
+              <Card className="glass-card-luxury border-0">
                 <CardHeader>
                   <CardTitle className="text-lg flex items-center">
                     <Clock className="w-5 h-5 mr-2" />
@@ -283,7 +283,7 @@ const Booking = () => {
               </Card>
 
               {/* Blocked Dates Notice */}
-              <Card className="glass-card border-0 border-l-4 border-l-accent">
+              <Card className="glass-card-luxury border-0 border-l-4 border-l-accent">
                 <CardContent className="pt-6">
                   <h4 className="font-semibold mb-2">Important Dates</h4>
                   <p className="text-sm text-muted-foreground mb-3">
@@ -298,7 +298,7 @@ const Booking = () => {
               </Card>
 
               {/* Contact Info */}
-              <Card className="glass-card border-0">
+              <Card className="glass-card-luxury border-0">
                 <CardContent className="pt-6">
                   <h4 className="font-semibold mb-3">Need Help?</h4>
                   <div className="space-y-2 text-sm">
