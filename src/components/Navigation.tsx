@@ -25,7 +25,7 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3 group">
-            <div className="font-display text-3xl text-primary group-hover:scale-105 transition-transform duration-300">
+            <div className="font-display text-3xl text-black group-hover:scale-105 transition-transform duration-300">
               Glory Nest
             </div>
           </Link>

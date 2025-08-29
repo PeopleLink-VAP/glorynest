@@ -115,7 +115,7 @@ const Footer = () => {
       <div className="fixed bottom-6 right-6 z-40">
         <Button 
           size="lg" 
-          className="h-14 px-8 bg-primary hover:bg-primary/90 text-primary-foreground font-bold shadow-xl border-0 animate-float transition-all duration-300 hover:scale-105"
+          className="h-14 px-8 bg-primary hover:bg-primary/90 text-primary-foreground font-bold shadow-xl border-0 transition-all duration-300 hover:scale-105"
           asChild
         >
           <Link to="/booking">
