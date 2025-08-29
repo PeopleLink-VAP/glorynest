@@ -1,91 +1,108 @@
-import { Sunrise, Coffee, BookOpen, Sunset } from "lucide-react";
+import { Sunrise, Coffee, BookOpen, Sunset, Sparkles } from "lucide-react";
+import cozyBreakfast from "@/assets/cozy-breakfast.jpg";
+import homeCooking from "@/assets/home-cooking.jpg";
+import readingCorner from "@/assets/reading-corner.jpg";
+import sparrowIcon from "@/assets/sparrow-icon.png";
 
 const ImagineYourStay = () => {
   const moments = [
     {
-      icon: Sunrise,
-      title: "Morning sunlight & bird calls",
-      description: "Wake naturally to gentle sunlight filtering through your windows and the melodic songs of local birds – no harsh alarms needed.",
-      time: "Morning"
-    },
-    {
       icon: Coffee,
-      title: "Breakfast by the pool",
-      description: "Savor authentic Vietnamese breakfast made with fresh local ingredients while enjoying the tranquil pool atmosphere.",
-      time: "Morning"
+      title: "Morning breakfast by the pool",
+      description: "Start your day with authentic Vietnamese pho and fresh tropical fruits by your private pool. The sparrows sing as steam rises from your coffee cup.",
+      time: "Morning",
+      image: cozyBreakfast
     },
     {
       icon: BookOpen,
-      title: "Quiet afternoon moments",
-      description: "Find your perfect spot in our sunken couch with a good book, or simply enjoy the peaceful garden views.",
-      time: "Afternoon"
+      title: "Afternoon reading sanctuary",
+      description: "Curl up in our cozy reading corner with a good book. Natural light streams through while the garden whispers its peaceful stories.",
+      time: "Afternoon", 
+      image: readingCorner
     },
     {
       icon: Sunset,
-      title: "Evening magic",
-      description: "Watch stunning rooftop sunsets, unwind in our sauna, or gather for a family dinner filled with stories and laughter.",
-      time: "Evening"
+      title: "Evening family cooking",
+      description: "Join us in the kitchen to learn grandmother's recipes. Share stories and laughter while creating meals that taste like home.",
+      time: "Evening",
+      image: homeCooking
     }
   ];
 
   return (
-    <section className="py-20 bg-background relative overflow-hidden">
-      {/* Background decoration */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-0 left-0 w-64 h-64 bg-secondary/20 rounded-full blur-3xl"></div>
+    <section className="py-20 bg-gradient-to-b from-background to-secondary/5 relative overflow-hidden">
+      {/* Decorative sparrows */}
+      <div className="absolute top-20 right-10 opacity-20 animate-float">
+        <img src={sparrowIcon} alt="" className="w-10 h-10" />
+      </div>
+      <div className="absolute bottom-32 left-8 opacity-30 animate-float" style={{animationDelay: '3s'}}>
+        <img src={sparrowIcon} alt="" className="w-8 h-8 transform scale-x-[-1]" />
+      </div>
       
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16 animate-fade-up">
+          <div className="inline-flex items-center space-x-2 glass-card px-4 py-2 mb-6">
+            <Sparkles className="w-5 h-5 text-primary" />
+            <span className="text-sm font-medium">Your Day at Glory Nest</span>
+          </div>
           <h2 className="font-serif text-3xl md:text-5xl font-semibold text-foreground mb-6">
-            Imagine Your Stay
+            Live Like Family, Not a Tourist
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Every moment at Glory Nest is crafted to help you slow down, 
-            connect with yourself and loved ones, and create lasting memories.
+            Experience authentic Vietnamese family life in your private villa sanctuary. 
+            Every moment unfolds naturally, like visiting dear friends.
           </p>
         </div>
 
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-6xl mx-auto space-y-16">
           {moments.map((moment, index) => (
             <div 
               key={moment.title}
-              className={`flex flex-col md:flex-row items-center gap-8 mb-16 animate-fade-up ${
-                index % 2 === 1 ? 'md:flex-row-reverse' : ''
+              className={`flex flex-col lg:flex-row items-center gap-12 animate-fade-up ${
+                index % 2 === 1 ? 'lg:flex-row-reverse' : ''
               }`}
               style={{ animationDelay: `${index * 0.2}s` }}
             >
-              <div className="flex-1 glass-card p-8">
-                <div className="flex items-center space-x-4 mb-4">
-                  <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center">
-                    <moment.icon className="w-6 h-6 text-primary" />
+              <div className="flex-1 space-y-6">
+                <div className="glass-card p-8 relative">
+                  <div className="flex items-center space-x-4 mb-6">
+                    <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center">
+                      <moment.icon className="w-7 h-7 text-primary" />
+                    </div>
+                    <div>
+                      <span className="text-sm text-primary font-medium uppercase tracking-wide">{moment.time}</span>
+                      <h3 className="font-serif text-2xl font-semibold text-foreground">
+                        {moment.title}
+                      </h3>
+                    </div>
                   </div>
-                  <div>
-                    <span className="text-sm text-primary font-medium">{moment.time}</span>
-                    <h3 className="font-semibold text-xl text-foreground">
-                      {moment.title}
-                    </h3>
+                  <p className="text-muted-foreground leading-relaxed text-lg">
+                    {moment.description}
+                  </p>
+                  
+                  {/* Decorative sparrow */}
+                  <div className="absolute top-4 right-4 opacity-10">
+                    <img src={sparrowIcon} alt="" className="w-6 h-6" />
                   </div>
                 </div>
-                <p className="text-muted-foreground leading-relaxed">
-                  {moment.description}
-                </p>
               </div>
               
               <div className="flex-shrink-0">
-                <div className="w-80 h-60 bg-gradient-to-br from-primary/20 to-secondary/30 rounded-2xl relative overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent"></div>
-                  <div className="absolute bottom-4 left-4 text-white/80 text-sm font-medium">
-                    {moment.title}
-                  </div>
+                <div className="w-96 h-72 rounded-2xl overflow-hidden glass-card hover:scale-105 transition-all duration-500">
+                  <img 
+                    src={moment.image} 
+                    alt={moment.title}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
             </div>
           ))}
         </div>
 
-        <div className="text-center glass-card p-8 max-w-2xl mx-auto animate-fade-up">
+        <div className="text-center glass-card p-8 max-w-2xl mx-auto animate-fade-up mt-20">
           <h3 className="font-serif text-2xl font-semibold text-foreground mb-4">
-            Glorynest in 3 Words
+            Glory Nest in Three Words
           </h3>
           <div className="flex justify-center space-x-8 text-lg">
             <span className="text-primary font-medium">Cozy.</span>

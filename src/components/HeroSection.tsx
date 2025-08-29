@@ -41,15 +41,15 @@ const HeroSection = () => {
           </div>
 
           {/* Creative Headline */}
-          <div className="space-y-4">
-            <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-bold text-white leading-tight">
+          <div className="space-y-6">
+            <h1 className="font-serif text-6xl md:text-8xl lg:text-9xl font-bold text-white leading-tight tracking-tight">
               Glory
-              <span className="block bg-gradient-to-r from-secondary to-accent bg-clip-text text-transparent">
+              <span className="block bg-gradient-to-r from-secondary via-accent to-primary bg-clip-text text-transparent animate-float">
                 Nest
               </span>
             </h1>
-            <p className="text-xl md:text-2xl lg:text-3xl font-medium text-white/90">
-              Your Perfect Family Escape in Hoi An
+            <p className="text-2xl md:text-3xl lg:text-4xl font-light text-white leading-relaxed">
+              Your Private Villa Sanctuary in Hoi An
             </p>
           </div>
 
@@ -60,57 +60,54 @@ const HeroSection = () => {
             Perfect for families with kids or romantic honeymoon getaways!
           </p>
 
-          {/* Package Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto">
-            <div className="glass-card p-6 hover:scale-105 transition-transform duration-300">
-              <Users className="w-8 h-8 text-primary mx-auto mb-3" />
-              <h3 className="font-semibold text-lg text-foreground mb-2">Family Package</h3>
-              <p className="text-sm text-muted-foreground">Pool, toys, kid-friendly meals & local adventures</p>
-            </div>
-            <div className="glass-card p-6 hover:scale-105 transition-transform duration-300">
-              <Heart className="w-8 h-8 text-accent mx-auto mb-3" />
-              <h3 className="font-semibold text-lg text-foreground mb-2">Honeymoon Package</h3>
-              <p className="text-sm text-muted-foreground">Romantic setup, couples' experiences & privacy</p>
-            </div>
-          </div>
 
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+          {/* CTA Button */}
+          <div className="flex justify-center">
             <ContactDialog variant="booking">
               <Button 
                 size="lg" 
-                className="min-w-56 h-16 text-lg font-semibold bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 shadow-2xl"
+                className="min-w-72 h-20 text-xl font-semibold bg-gradient-to-r from-primary via-secondary to-accent hover:from-primary/90 hover:via-secondary/90 hover:to-accent/90 shadow-2xl text-white border-0"
               >
-                <Calendar className="w-5 h-5 mr-2" />
-                Book Entire Villa
-              </Button>
-            </ContactDialog>
-            
-            <ContactDialog variant="family">
-              <Button 
-                variant="outline" 
-                size="lg" 
-                className="min-w-56 h-16 text-lg font-semibold glass-card text-foreground border-white/30 hover:bg-white/10"
-              >
-                <Users className="w-5 h-5 mr-2" />
-                Family Package
+                <Calendar className="w-6 h-6 mr-3" />
+                Book Your Private Villa
               </Button>
             </ContactDialog>
           </div>
 
           {/* Quick Highlights */}
-          <div className="flex flex-wrap justify-center items-center gap-8 pt-6 text-white/90">
-            <div className="flex items-center space-x-2 glass-card px-4 py-2 rounded-full">
-              <Star className="w-5 h-5 text-secondary" />
-              <span className="text-sm font-medium">3.5M VND/night</span>
+          <div className="flex flex-wrap justify-center items-center gap-6 pt-8">
+            <div className="glass-card px-6 py-4 rounded-2xl hover:scale-105 transition-all duration-300">
+              <div className="flex items-center space-x-3">
+                <div className="w-10 h-10 bg-secondary/20 rounded-full flex items-center justify-center">
+                  <Star className="w-5 h-5 text-secondary" />
+                </div>
+                <div>
+                  <div className="text-lg font-bold text-white">3.5M VND</div>
+                  <div className="text-xs text-white/70">per night</div>
+                </div>
+              </div>
             </div>
-            <div className="flex items-center space-x-2 glass-card px-4 py-2 rounded-full">
-              <Heart className="w-5 h-5 text-accent" />
-              <span className="text-sm font-medium">E-Fund Impact</span>
+            <div className="glass-card px-6 py-4 rounded-2xl hover:scale-105 transition-all duration-300">
+              <div className="flex items-center space-x-3">
+                <div className="w-10 h-10 bg-accent/20 rounded-full flex items-center justify-center">
+                  <Heart className="w-5 h-5 text-accent" />
+                </div>
+                <div>
+                  <div className="text-lg font-bold text-white">E-Fund</div>
+                  <div className="text-xs text-white/70">Impact Stay</div>
+                </div>
+              </div>
             </div>
-            <div className="flex items-center space-x-2 glass-card px-4 py-2 rounded-full">
-              <MapPin className="w-5 h-5 text-primary" />
-              <span className="text-sm font-medium">Walk to Town</span>
+            <div className="glass-card px-6 py-4 rounded-2xl hover:scale-105 transition-all duration-300">
+              <div className="flex items-center space-x-3">
+                <div className="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center">
+                  <MapPin className="w-5 h-5 text-primary" />
+                </div>
+                <div>
+                  <div className="text-lg font-bold text-white">Walk to</div>
+                  <div className="text-xs text-white/70">Old Town</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

@@ -1,13 +1,11 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
+import OurStoryTeaser from "@/components/OurStoryTeaser";
 import WhyGloryNest from "@/components/WhyGloryNest";
 import ImagineYourStay from "@/components/ImagineYourStay";
-import RoomsSnapshot from "@/components/RoomsSnapshot";
-import AtAGlance from "@/components/AtAGlance";
-import LocationSection from "@/components/LocationSection";
+import BookingSection from "@/components/BookingSection";
 import WhyGuestsLove from "@/components/WhyGuestsLove";
-import OurStoryTeaser from "@/components/OurStoryTeaser";
 import EFundBanner from "@/components/EFundBanner";
 import GuestTestimonials from "@/components/GuestTestimonials";
 import FAQSection from "@/components/FAQSection";
@@ -18,13 +16,11 @@ const Index = () => {
       <Navigation />
       <main>
         <HeroSection />
+        <OurStoryTeaser />
         <WhyGloryNest />
         <ImagineYourStay />
-        <RoomsSnapshot />
-        <AtAGlance />
-        <LocationSection />
+        <BookingSection />
         <WhyGuestsLove />
-        <OurStoryTeaser />
         <EFundBanner />
         <GuestTestimonials />
         <FAQSection />

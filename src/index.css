@@ -145,6 +145,10 @@
   .animate-float {
     animation: float 3s ease-in-out infinite;
   }
+  
+  .animate-sparrow-hop {
+    animation: sparrow-hop 2s ease-in-out infinite;
+  }
 }
 
 @layer utilities {
@@ -175,5 +179,23 @@
   }
   50% {
     transform: translateY(-10px);
+  }
+}
+
+@keyframes sparrow-hop {
+  0% {
+    transform: translateX(0) scale(1);
+  }
+  25% {
+    transform: translateX(5px) scale(1.1);
+  }
+  50% {
+    transform: translateX(10px) scale(1);
+  }
+  75% {
+    transform: translateX(5px) scale(0.9);
+  }
+  100% {
+    transform: translateX(0) scale(1);
   }
 }
