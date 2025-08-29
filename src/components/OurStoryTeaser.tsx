@@ -1,10 +1,8 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-
 const OurStoryTeaser = () => {
-  return (
-    <section className="py-20 bg-background relative overflow-hidden">
+  return <section className="py-20 bg-background relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute top-1/2 left-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl transform -translate-y-1/2"></div>
       <div className="absolute top-1/4 right-0 w-64 h-64 bg-secondary/20 rounded-full blur-3xl"></div>
@@ -42,12 +40,14 @@ const OurStoryTeaser = () => {
               </Button>
             </div>
 
-            <div className="animate-fade-up" style={{ animationDelay: '0.2s' }}>
+            <div className="animate-fade-up" style={{
+            animationDelay: '0.2s'
+          }}>
               <div className="glass-card p-8 space-y-6">
                 <div className="aspect-[4/3] bg-gradient-to-br from-primary/20 to-secondary/30 rounded-xl relative overflow-hidden">
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                   <div className="absolute bottom-4 left-4 text-white">
-                    <p className="text-sm font-medium">Trinh & Aaliyah</p>
+                    <p className="text-sm font-medium">Trinh &amp; David</p>
                     <p className="text-xs opacity-90">Your hosts at Glory Nest</p>
                   </div>
                 </div>
@@ -65,8 +65,6 @@ const OurStoryTeaser = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default OurStoryTeaser;
