@@ -14,13 +14,670 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      blog_posts: {
+        Row: {
+          author: string
+          category: string | null
+          content: string
+          created_at: string
+          excerpt: string | null
+          featured_image: string | null
+          id: string
+          meta_description: string | null
+          meta_title: string | null
+          published_at: string
+          slug: string
+          status: string | null
+          tags: string[] | null
+          title: string
+          updated_at: string
+        }
+        Insert: {
+          author?: string
+          category?: string | null
+          content: string
+          created_at?: string
+          excerpt?: string | null
+          featured_image?: string | null
+          id?: string
+          meta_description?: string | null
+          meta_title?: string | null
+          published_at?: string
+          slug: string
+          status?: string | null
+          tags?: string[] | null
+          title: string
+          updated_at?: string
+        }
+        Update: {
+          author?: string
+          category?: string | null
+          content?: string
+          created_at?: string
+          excerpt?: string | null
+          featured_image?: string | null
+          id?: string
+          meta_description?: string | null
+          meta_title?: string | null
+          published_at?: string
+          slug?: string
+          status?: string | null
+          tags?: string[] | null
+          title?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
+      businesses: {
+        Row: {
+          admin_notes: string | null
+          company_name: string
+          company_size: string | null
+          contact_person: string
+          created_at: string
+          email: string
+          id: string
+          industry: string | null
+          phone_number: string | null
+          registration_status: string | null
+          updated_at: string
+          user_id: string
+          website: string | null
+        }
+        Insert: {
+          admin_notes?: string | null
+          company_name: string
+          company_size?: string | null
+          contact_person: string
+          created_at?: string
+          email: string
+          id?: string
+          industry?: string | null
+          phone_number?: string | null
+          registration_status?: string | null
+          updated_at?: string
+          user_id: string
+          website?: string | null
+        }
+        Update: {
+          admin_notes?: string | null
+          company_name?: string
+          company_size?: string | null
+          contact_person?: string
+          created_at?: string
+          email?: string
+          id?: string
+          industry?: string | null
+          phone_number?: string | null
+          registration_status?: string | null
+          updated_at?: string
+          user_id?: string
+          website?: string | null
+        }
+        Relationships: []
+      }
+      membership_tiers: {
+        Row: {
+          created_at: string
+          description: string | null
+          features: string[] | null
+          id: string
+          name: string
+          price: number | null
+          updated_at: string
+        }
+        Insert: {
+          created_at?: string
+          description?: string | null
+          features?: string[] | null
+          id?: string
+          name: string
+          price?: number | null
+          updated_at?: string
+        }
+        Update: {
+          created_at?: string
+          description?: string | null
+          features?: string[] | null
+          id?: string
+          name?: string
+          price?: number | null
+          updated_at?: string
+        }
+        Relationships: []
+      }
+      newsletter_campaigns: {
+        Row: {
+          click_rate: number | null
+          content: string | null
+          created_at: string | null
+          created_by: string | null
+          id: string
+          open_rate: number | null
+          scheduled_at: string | null
+          sent_at: string | null
+          status: string
+          title: string
+          updated_at: string | null
+        }
+        Insert: {
+          click_rate?: number | null
+          content?: string | null
+          created_at?: string | null
+          created_by?: string | null
+          id?: string
+          open_rate?: number | null
+          scheduled_at?: string | null
+          sent_at?: string | null
+          status?: string
+          title: string
+          updated_at?: string | null
+        }
+        Update: {
+          click_rate?: number | null
+          content?: string | null
+          created_at?: string | null
+          created_by?: string | null
+          id?: string
+          open_rate?: number | null
+          scheduled_at?: string | null
+          sent_at?: string | null
+          status?: string
+          title?: string
+          updated_at?: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "newsletter_campaigns_created_by_fkey"
+            columns: ["created_by"]
+            isOneToOne: false
+            referencedRelation: "profiles"
+            referencedColumns: ["user_id"]
+          },
+        ]
+      }
+      newsletter_email_list_members: {
+        Row: {
+          added_at: string | null
+          id: string
+          list_id: string
+          profile_id: string
+        }
+        Insert: {
+          added_at?: string | null
+          id?: string
+          list_id: string
+          profile_id: string
+        }
+        Update: {
+          added_at?: string | null
+          id?: string
+          list_id?: string
+          profile_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "newsletter_email_list_members_list_id_fkey"
+            columns: ["list_id"]
+            isOneToOne: false
+            referencedRelation: "newsletter_email_lists"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "newsletter_email_list_members_profile_id_fkey"
+            columns: ["profile_id"]
+            isOneToOne: false
+            referencedRelation: "profiles"
+            referencedColumns: ["user_id"]
+          },
+        ]
+      }
+      newsletter_email_lists: {
+        Row: {
+          created_at: string | null
+          created_by: string | null
+          description: string | null
+          filter_criteria: Json | null
+          id: string
+          name: string
+          updated_at: string | null
+        }
+        Insert: {
+          created_at?: string | null
+          created_by?: string | null
+          description?: string | null
+          filter_criteria?: Json | null
+          id?: string
+          name: string
+          updated_at?: string | null
+        }
+        Update: {
+          created_at?: string | null
+          created_by?: string | null
+          description?: string | null
+          filter_criteria?: Json | null
+          id?: string
+          name?: string
+          updated_at?: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "newsletter_email_lists_created_by_fkey"
+            columns: ["created_by"]
+            isOneToOne: false
+            referencedRelation: "profiles"
+            referencedColumns: ["user_id"]
+          },
+        ]
+      }
+      newsletter_interactions: {
+        Row: {
+          event: string
+          id: string
+          occurred_at: string | null
+          recipient_id: string
+          url: string | null
+          user_agent: string | null
+        }
+        Insert: {
+          event: string
+          id?: string
+          occurred_at?: string | null
+          recipient_id: string
+          url?: string | null
+          user_agent?: string | null
+        }
+        Update: {
+          event?: string
+          id?: string
+          occurred_at?: string | null
+          recipient_id?: string
+          url?: string | null
+          user_agent?: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "newsletter_interactions_recipient_id_fkey"
+            columns: ["recipient_id"]
+            isOneToOne: false
+            referencedRelation: "newsletter_recipients"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      newsletter_recipients: {
+        Row: {
+          campaign_id: string
+          click_count: number | null
+          click_last: string | null
+          email: string
+          id: string
+          list_id: string | null
+          open_count: number | null
+          open_last: string | null
+          profile_id: string | null
+          sent_at: string | null
+        }
+        Insert: {
+          campaign_id: string
+          click_count?: number | null
+          click_last?: string | null
+          email: string
+          id?: string
+          list_id?: string | null
+          open_count?: number | null
+          open_last?: string | null
+          profile_id?: string | null
+          sent_at?: string | null
+        }
+        Update: {
+          campaign_id?: string
+          click_count?: number | null
+          click_last?: string | null
+          email?: string
+          id?: string
+          list_id?: string | null
+          open_count?: number | null
+          open_last?: string | null
+          profile_id?: string | null
+          sent_at?: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "newsletter_recipients_campaign_id_fkey"
+            columns: ["campaign_id"]
+            isOneToOne: false
+            referencedRelation: "newsletter_campaigns"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "newsletter_recipients_list_id_fkey"
+            columns: ["list_id"]
+            isOneToOne: false
+            referencedRelation: "newsletter_email_lists"
+            referencedColumns: ["id"]
+          },
+          {
+            foreignKeyName: "newsletter_recipients_profile_id_fkey"
+            columns: ["profile_id"]
+            isOneToOne: false
+            referencedRelation: "profiles"
+            referencedColumns: ["user_id"]
+          },
+        ]
+      }
+      profiles: {
+        Row: {
+          avatar_url: string | null
+          bio: string | null
+          country_of_origin: string | null
+          created_at: string
+          email: string
+          full_name: string | null
+          id: string
+          membership_tier: string | null
+          role: string | null
+          skills: string[] | null
+          updated_at: string
+          user_id: string
+        }
+        Insert: {
+          avatar_url?: string | null
+          bio?: string | null
+          country_of_origin?: string | null
+          created_at?: string
+          email: string
+          full_name?: string | null
+          id?: string
+          membership_tier?: string | null
+          role?: string | null
+          skills?: string[] | null
+          updated_at?: string
+          user_id: string
+        }
+        Update: {
+          avatar_url?: string | null
+          bio?: string | null
+          country_of_origin?: string | null
+          created_at?: string
+          email?: string
+          full_name?: string | null
+          id?: string
+          membership_tier?: string | null
+          role?: string | null
+          skills?: string[] | null
+          updated_at?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
+      talent_activities: {
+        Row: {
+          activity_type: string
+          created_at: string
+          created_by: string | null
+          description: string
+          id: string
+          metadata: Json | null
+          talent_id: string
+        }
+        Insert: {
+          activity_type: string
+          created_at?: string
+          created_by?: string | null
+          description: string
+          id?: string
+          metadata?: Json | null
+          talent_id: string
+        }
+        Update: {
+          activity_type?: string
+          created_at?: string
+          created_by?: string | null
+          description?: string
+          id?: string
+          metadata?: Json | null
+          talent_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "talent_activities_talent_id_fkey"
+            columns: ["talent_id"]
+            isOneToOne: false
+            referencedRelation: "talents"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      talents: {
+        Row: {
+          admin_notes: string | null
+          availability_status: string | null
+          avatar_url: string | null
+          average_rating: number | null
+          bio: string | null
+          created_at: string
+          cv_url: string | null
+          email: string
+          full_name: string
+          has_elite_verified_badge: boolean | null
+          id: string
+          is_id_verified: boolean | null
+          is_kyc_verified: boolean | null
+          is_skill_verified: boolean | null
+          is_vap_graduate: boolean | null
+          languages: string[] | null
+          location: string | null
+          phone_number: string | null
+          portfolio_links: string[] | null
+          primary_role: string | null
+          profile_picture_url: string | null
+          registration_status: string | null
+          skills: string[] | null
+          total_reviews: number | null
+          updated_at: string
+          user_id: string
+        }
+        Insert: {
+          admin_notes?: string | null
+          availability_status?: string | null
+          avatar_url?: string | null
+          average_rating?: number | null
+          bio?: string | null
+          created_at?: string
+          cv_url?: string | null
+          email: string
+          full_name: string
+          has_elite_verified_badge?: boolean | null
+          id?: string
+          is_id_verified?: boolean | null
+          is_kyc_verified?: boolean | null
+          is_skill_verified?: boolean | null
+          is_vap_graduate?: boolean | null
+          languages?: string[] | null
+          location?: string | null
+          phone_number?: string | null
+          portfolio_links?: string[] | null
+          primary_role?: string | null
+          profile_picture_url?: string | null
+          registration_status?: string | null
+          skills?: string[] | null
+          total_reviews?: number | null
+          updated_at?: string
+          user_id: string
+        }
+        Update: {
+          admin_notes?: string | null
+          availability_status?: string | null
+          avatar_url?: string | null
+          average_rating?: number | null
+          bio?: string | null
+          created_at?: string
+          cv_url?: string | null
+          email?: string
+          full_name?: string
+          has_elite_verified_badge?: boolean | null
+          id?: string
+          is_id_verified?: boolean | null
+          is_kyc_verified?: boolean | null
+          is_skill_verified?: boolean | null
+          is_vap_graduate?: boolean | null
+          languages?: string[] | null
+          location?: string | null
+          phone_number?: string | null
+          portfolio_links?: string[] | null
+          primary_role?: string | null
+          profile_picture_url?: string | null
+          registration_status?: string | null
+          skills?: string[] | null
+          total_reviews?: number | null
+          updated_at?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
+      virtual_assistants: {
+        Row: {
+          admin_notes: string | null
+          availability_hours: number | null
+          avatar_url: string | null
+          certifications: string[] | null
+          client_rating: number | null
+          completed_projects: number | null
+          cover_image_url: string | null
+          created_at: string
+          currency: string | null
+          cv_url: string | null
+          experience_years: number | null
+          featured: boolean | null
+          hourly_rate: number | null
+          id: string
+          languages: string[] | null
+          linkedin_profile: string | null
+          phone_number: string | null
+          portfolio_url: string | null
+          preferred_contact_method: string | null
+          profile_id: string
+          response_time_hours: number | null
+          specializations: string[] | null
+          success_rate: number | null
+          tags: string[] | null
+          telegram_handle: string | null
+          timezone: string | null
+          tools_proficiency: string[] | null
+          updated_at: string
+          va_status: string | null
+          verification_date: string | null
+          verified_by: string | null
+          whatsapp_number: string | null
+        }
+        Insert: {
+          admin_notes?: string | null
+          availability_hours?: number | null
+          avatar_url?: string | null
+          certifications?: string[] | null
+          client_rating?: number | null
+          completed_projects?: number | null
+          cover_image_url?: string | null
+          created_at?: string
+          currency?: string | null
+          cv_url?: string | null
+          experience_years?: number | null
+          featured?: boolean | null
+          hourly_rate?: number | null
+          id?: string
+          languages?: string[] | null
+          linkedin_profile?: string | null
+          phone_number?: string | null
+          portfolio_url?: string | null
+          preferred_contact_method?: string | null
+          profile_id: string
+          response_time_hours?: number | null
+          specializations?: string[] | null
+          success_rate?: number | null
+          tags?: string[] | null
+          telegram_handle?: string | null
+          timezone?: string | null
+          tools_proficiency?: string[] | null
+          updated_at?: string
+          va_status?: string | null
+          verification_date?: string | null
+          verified_by?: string | null
+          whatsapp_number?: string | null
+        }
+        Update: {
+          admin_notes?: string | null
+          availability_hours?: number | null
+          avatar_url?: string | null
+          certifications?: string[] | null
+          client_rating?: number | null
+          completed_projects?: number | null
+          cover_image_url?: string | null
+          created_at?: string
+          currency?: string | null
+          cv_url?: string | null
+          experience_years?: number | null
+          featured?: boolean | null
+          hourly_rate?: number | null
+          id?: string
+          languages?: string[] | null
+          linkedin_profile?: string | null
+          phone_number?: string | null
+          portfolio_url?: string | null
+          preferred_contact_method?: string | null
+          profile_id?: string
+          response_time_hours?: number | null
+          specializations?: string[] | null
+          success_rate?: number | null
+          tags?: string[] | null
+          telegram_handle?: string | null
+          timezone?: string | null
+          tools_proficiency?: string[] | null
+          updated_at?: string
+          va_status?: string | null
+          verification_date?: string | null
+          verified_by?: string | null
+          whatsapp_number?: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "virtual_assistants_profile_id_fkey"
+            columns: ["profile_id"]
+            isOneToOne: false
+            referencedRelation: "profiles"
+            referencedColumns: ["user_id"]
+          },
+          {
+            foreignKeyName: "virtual_assistants_verified_by_fkey"
+            columns: ["verified_by"]
+            isOneToOne: false
+            referencedRelation: "profiles"
+            referencedColumns: ["user_id"]
+          },
+        ]
+      }
     }
     Views: {
       [_ in never]: never
     }
     Functions: {
-      [_ in never]: never
+      bootstrap_admin: {
+        Args: Record<PropertyKey, never>
+        Returns: boolean
+      }
+      create_talent_activity: {
+        Args: {
+          p_activity_type: string
+          p_description: string
+          p_metadata?: Json
+          p_talent_id: string
+        }
+        Returns: string
+      }
+      is_admin: {
+        Args: Record<PropertyKey, never>
+        Returns: boolean
+      }
     }
     Enums: {
       [_ in never]: never
