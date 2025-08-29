@@ -32,15 +32,15 @@ const ImagineYourStay = () => {
   return (
     <section className="py-20 bg-secondary/3 relative overflow-hidden">
       {/* Decorative sparrows */}
-      <div className="absolute top-20 right-10 opacity-20 animate-float">
+      <div className="absolute top-20 right-10 opacity-20">
         <img src={sparrowIcon} alt="" className="w-10 h-10" />
       </div>
-      <div className="absolute bottom-32 left-8 opacity-30 animate-float" style={{animationDelay: '3s'}}>
+      <div className="absolute bottom-32 left-8 opacity-30">
         <img src={sparrowIcon} alt="" className="w-8 h-8 transform scale-x-[-1]" />
       </div>
       
       <div className="container mx-auto px-4 relative z-10">
-        <div className="text-center mb-16 animate-fade-up">
+        <div className="text-center mb-16">
           <div className="inline-flex items-center space-x-2 glass-card px-4 py-2 mb-6">
             <Sparkles className="w-5 h-5 text-primary" />
             <span className="text-sm font-medium">Your Day at Glory Nest</span>
@@ -58,10 +58,9 @@ const ImagineYourStay = () => {
           {moments.map((moment, index) => (
             <div 
               key={moment.title}
-              className={`flex flex-col lg:flex-row items-center gap-12 animate-fade-up ${
+              className={`flex flex-col lg:flex-row items-center gap-12 ${
                 index % 2 === 1 ? 'lg:flex-row-reverse' : ''
               }`}
-              style={{ animationDelay: `${index * 0.2}s` }}
             >
               <div className="flex-1 space-y-6">
                 <div className="glass-card p-8 relative">
@@ -88,7 +87,7 @@ const ImagineYourStay = () => {
               </div>
               
               <div className="flex-shrink-0">
-                <div className="w-96 h-72 rounded-2xl overflow-hidden glass-card hover:scale-105 transition-all duration-500">
+                <div className="w-96 h-72 rounded-2xl overflow-hidden glass-card">
                   <img 
                     src={moment.image} 
                     alt={moment.title}
@@ -100,7 +99,7 @@ const ImagineYourStay = () => {
           ))}
         </div>
 
-        <div className="text-center glass-card p-8 max-w-2xl mx-auto animate-fade-up mt-20">
+        <div className="text-center glass-card p-8 max-w-2xl mx-auto mt-20">
           <h3 className="font-display text-3xl font-normal text-foreground mb-4">
             Glory Nest in Three Words
           </h3>

@@ -21,18 +21,18 @@ const HeroSection = () => {
       {/* Floating nest elements */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-20 left-10 opacity-60">
-          <Sparkles className="w-8 h-8 text-secondary animate-pulse" />
+          <Sparkles className="w-8 h-8 text-secondary" />
         </div>
         <div className="absolute top-32 right-16 opacity-40">
-          <Heart className="w-6 h-6 text-accent animate-float" />
+          <Heart className="w-6 h-6 text-accent" />
         </div>
         <div className="absolute bottom-40 left-20 opacity-50">
-          <Star className="w-10 h-10 text-primary animate-float" style={{animationDelay: '1s'}} />
+          <Star className="w-10 h-10 text-primary" />
         </div>
       </div>
 
       <div className="relative z-10 container mx-auto px-4 text-center">
-        <div className="max-w-5xl mx-auto space-y-10 animate-fade-up">
+        <div className="max-w-5xl mx-auto space-y-10">
           {/* Special Badge */}
           <div className="inline-flex items-center space-x-3 glass-card px-6 py-3 text-sm font-medium">
             <Sparkles className="w-5 h-5 text-primary" />
@@ -73,7 +73,7 @@ const HeroSection = () => {
 
           {/* Quick Highlights */}
           <div className="flex flex-wrap justify-center items-center gap-6 pt-8">
-            <div className="bg-white/10 backdrop-blur-md border border-white/20 px-6 py-4 rounded-2xl hover:scale-105 hover:bg-white/15 transition-all duration-300 shadow-lg">
+            <div className="bg-white/10 backdrop-blur-md border border-white/20 px-6 py-4 rounded-2xl shadow-lg">
               <div className="flex items-center space-x-3">
                 <div className="w-10 h-10 bg-secondary/30 backdrop-blur-sm rounded-full flex items-center justify-center border border-secondary/40">
                   <Star className="w-5 h-5 text-secondary" />
@@ -84,7 +84,7 @@ const HeroSection = () => {
                 </div>
               </div>
             </div>
-            <div className="bg-white/10 backdrop-blur-md border border-white/20 px-6 py-4 rounded-2xl hover:scale-105 hover:bg-white/15 transition-all duration-300 shadow-lg">
+            <div className="bg-white/10 backdrop-blur-md border border-white/20 px-6 py-4 rounded-2xl shadow-lg">
               <div className="flex items-center space-x-3">
                 <div className="w-10 h-10 bg-accent/30 backdrop-blur-sm rounded-full flex items-center justify-center border border-accent/40">
                   <Heart className="w-5 h-5 text-accent" />
@@ -110,10 +110,10 @@ const HeroSection = () => {
         </div>
       </div>
 
-      {/* Animated scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+      {/* Scroll indicator */}
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
         <div className="w-8 h-12 border-2 border-white/60 rounded-full flex justify-center backdrop-blur-sm">
-          <div className="w-2 h-4 bg-white/80 rounded-full mt-2 animate-pulse"></div>
+          <div className="w-2 h-4 bg-white/80 rounded-full mt-2"></div>
         </div>
       </div>
     </section>

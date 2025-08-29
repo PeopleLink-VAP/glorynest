@@ -7,16 +7,16 @@ const BookingSection = () => {
   return (
     <section className="py-20 bg-primary/3 relative overflow-hidden">
       {/* Decorative sparrows */}
-      <div className="absolute top-16 left-12 opacity-25 animate-float">
+      <div className="absolute top-16 left-12 opacity-25">
         <img src={sparrowIcon} alt="" className="w-10 h-10" />
       </div>
-      <div className="absolute bottom-20 right-16 opacity-20 animate-float" style={{animationDelay: '2s'}}>
+      <div className="absolute bottom-20 right-16 opacity-20">
         <img src={sparrowIcon} alt="" className="w-8 h-8 transform scale-x-[-1]" />
       </div>
       
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16 animate-fade-up">
+          <div className="text-center mb-16">
             <div className="inline-flex items-center space-x-2 glass-card-luxury px-6 py-3 mb-6">
               <Sparkles className="w-5 h-5 text-primary" />
               <span className="text-sm font-semibold text-foreground">Ready to Experience Glory Nest?</span>
@@ -32,24 +32,24 @@ const BookingSection = () => {
 
           {/* Villa Features */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-            <div className="glass-card-luxury p-8 text-center group hover:scale-105 transition-all duration-300 animate-fade-up">
-              <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-smooth">
+            <div className="glass-card-luxury p-8 text-center group">
+              <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
                 <Home className="w-8 h-8 text-primary" />
               </div>
               <h3 className="font-sans text-lg font-semibold text-foreground mb-2">Entire Private Villa</h3>
               <p className="font-sans text-muted-foreground text-sm">2 bedrooms, full kitchen, living room & private pool</p>
             </div>
             
-            <div className="glass-card-luxury p-8 text-center group hover:scale-105 transition-all duration-300 animate-fade-up" style={{animationDelay: '0.1s'}}>
-              <div className="w-16 h-16 bg-secondary/10 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:bg-secondary/20 transition-smooth">
+            <div className="glass-card-luxury p-8 text-center group">
+              <div className="w-16 h-16 bg-secondary/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
                 <Users className="w-8 h-8 text-secondary" />
               </div>
               <h3 className="font-sans text-lg font-semibold text-foreground mb-2">Perfect for Families</h3>
               <p className="font-sans text-muted-foreground text-sm">Up to 6 guests, kid-friendly amenities included</p>
             </div>
             
-            <div className="glass-card-luxury p-8 text-center group hover:scale-105 transition-all duration-300 animate-fade-up" style={{animationDelay: '0.2s'}}>
-              <div className="w-16 h-16 bg-accent/10 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:bg-accent/20 transition-smooth">
+            <div className="glass-card-luxury p-8 text-center group">
+              <div className="w-16 h-16 bg-accent/10 rounded-2xl flex items-center justify-center mx-auto mb-4">
                 <Calendar className="w-8 h-8 text-accent" />
               </div>
               <h3 className="font-sans text-lg font-semibold text-foreground mb-2">3.5M VND/Night</h3>
@@ -58,7 +58,7 @@ const BookingSection = () => {
           </div>
 
           {/* Main CTA */}
-          <div className="text-center space-y-8 animate-fade-up" style={{animationDelay: '0.3s'}}>
+          <div className="text-center space-y-8">
             <div className="glass-card-luxury p-10 max-w-2xl mx-auto relative overflow-hidden">
               <div className="absolute top-4 right-4 opacity-10">
                 <img src={sparrowIcon} alt="" className="w-8 h-8" />
@@ -76,7 +76,7 @@ const BookingSection = () => {
                 <ContactDialog variant="booking">
                   <Button 
                     size="lg" 
-                    className="min-w-48 h-16 text-lg font-bold bg-primary hover:bg-primary/90 shadow-xl text-primary-foreground border-0 transition-all duration-300 hover:scale-105"
+                    className="min-w-48 h-16 text-lg font-bold bg-primary hover:bg-primary/90 shadow-xl text-primary-foreground border-0"
                   >
                     <Calendar className="w-6 h-6 mr-3" />
                     Book Now
@@ -87,7 +87,7 @@ const BookingSection = () => {
                   <Button 
                     variant="outline" 
                     size="lg" 
-                    className="min-w-48 h-16 text-lg font-bold glass-card-luxury border-2 border-primary/40 hover:bg-primary/10 text-foreground hover:text-primary transition-all duration-300 hover:scale-105"
+                    className="min-w-48 h-16 text-lg font-bold glass-card-luxury border-2 border-primary/40 hover:bg-primary/10 text-foreground hover:text-primary"
                   >
                     Ask Questions
                   </Button>

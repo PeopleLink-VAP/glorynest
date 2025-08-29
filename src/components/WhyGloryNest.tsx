@@ -28,15 +28,15 @@ const WhyGloryNest = () => {
   return (
     <section className="py-20 bg-background relative overflow-hidden">
       {/* Decorative sparrows */}
-      <div className="absolute top-10 left-10 opacity-30 animate-float">
+      <div className="absolute top-10 left-10 opacity-30">
         <img src={sparrowIcon} alt="" className="w-12 h-12" />
       </div>
-      <div className="absolute top-32 right-20 opacity-20 animate-float" style={{animationDelay: '2s'}}>
+      <div className="absolute top-32 right-20 opacity-20">
         <img src={sparrowIcon} alt="" className="w-8 h-8 transform scale-x-[-1]" />
       </div>
       
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16 animate-fade-up">
+        <div className="text-center mb-16">
           <div className="inline-flex items-center space-x-2 glass-card px-4 py-2 mb-6">
             <Sparkles className="w-5 h-5 text-primary" />
             <span className="text-sm font-medium">What Makes Us Special</span>
@@ -54,12 +54,11 @@ const WhyGloryNest = () => {
           {features.map((feature, index) => (
             <div 
               key={feature.title}
-              className="group animate-fade-up"
-              style={{ animationDelay: `${index * 0.1}s` }}
+              className="group"
             >
-              <div className="glass-card p-8 h-full hover:scale-105 transition-all duration-300 relative overflow-hidden">
+              <div className="glass-card p-8 h-full relative overflow-hidden">
                 <div className="flex items-start space-x-4 mb-4">
-                  <div className="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center group-hover:bg-primary/20 transition-smooth flex-shrink-0">
+                  <div className="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center flex-shrink-0">
                     <feature.icon className="w-7 h-7 text-primary" />
                   </div>
                   <div className="flex-1">
@@ -73,7 +72,7 @@ const WhyGloryNest = () => {
                 </div>
                 
                 {/* Decorative element */}
-                <div className="absolute bottom-4 right-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                <div className="absolute bottom-4 right-4 opacity-10">
                   <img src={sparrowIcon} alt="" className="w-6 h-6" />
                 </div>
               </div>

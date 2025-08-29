@@ -33,7 +33,7 @@ const RoomsSnapshot = () => {
   return (
     <section className="py-20 bg-secondary/8">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16 animate-fade-up">
+        <div className="text-center mb-16">
           <div className="inline-flex items-center space-x-2 glass-card px-4 py-2 mb-6">
             <Sparkles className="w-5 h-5 text-primary" />
             <span className="text-sm font-medium">Entire Private Villa</span>
@@ -77,14 +77,13 @@ const RoomsSnapshot = () => {
           {packages.map((pkg, index) => (
             <Card 
               key={pkg.name}
-              className="glass-card border-0 overflow-hidden group hover:scale-105 transition-all duration-300 animate-fade-up"
-              style={{ animationDelay: `${index * 0.2}s` }}
+              className="glass-card border-0 overflow-hidden group"
             >
               <div className="aspect-[16/10] relative overflow-hidden">
                 <img 
                   src={pkg.image} 
                   alt={pkg.name}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-black/25"></div>
                 <div className="absolute top-4 left-4">

@@ -34,7 +34,7 @@ const AtAGlance = () => {
   return (
     <section className="py-20 bg-secondary/20">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16 animate-fade-up">
+        <div className="text-center mb-16">
           <h2 className="font-serif text-3xl md:text-5xl font-semibold text-foreground mb-6">
             At a Glance
           </h2>
@@ -49,8 +49,7 @@ const AtAGlance = () => {
             {highlights.map((highlight, index) => (
               <div 
                 key={highlight.label}
-                className="glass-card p-6 flex items-start space-x-4 animate-fade-up"
-                style={{ animationDelay: `${index * 0.1}s` }}
+                className="glass-card p-6 flex items-start space-x-4"
               >
                 <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0">
                   <highlight.icon className="w-6 h-6 text-primary" />
@@ -68,7 +67,7 @@ const AtAGlance = () => {
           </div>
 
           <div className="text-center">
-            <Button size="lg" className="h-14 px-8 bg-primary hover:bg-primary/90 text-primary-foreground font-bold shadow-lg border-0 transition-all duration-300 hover:scale-105" asChild>
+            <Button size="lg" className="h-14 px-8 bg-primary hover:bg-primary/90 text-primary-foreground font-bold shadow-lg border-0" asChild>
                 <Link to="/booking">Book Your Stay</Link>
               </Button>
           </div>
