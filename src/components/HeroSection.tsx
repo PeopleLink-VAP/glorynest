@@ -21,19 +21,6 @@ const HeroSection = () => {
         <div className="absolute inset-0 backdrop-blur-[2px]"></div>
       </div>
       
-      {/* Floating nest elements */}
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-20 left-10 opacity-60">
-          <Sparkles className="w-8 h-8 text-secondary" />
-        </div>
-        <div className="absolute top-32 right-16 opacity-40">
-          <Heart className="w-6 h-6 text-accent" />
-        </div>
-        <div className="absolute bottom-40 left-20 opacity-50">
-          <Star className="w-10 h-10 text-primary" />
-        </div>
-      </div>
-
       <div className="relative z-10 container mx-auto px-4 text-center">
         <div className="max-w-5xl mx-auto space-y-10">
           {/* Special Badge */}
