@@ -1,8 +1,11 @@
 import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const { t } = useTranslation();
+  
   return (
     <footer className="bg-secondary/50 border-t border-primary/10">
       <div className="container mx-auto px-4 py-12">
@@ -18,37 +21,36 @@ const Footer = () => {
               <span className="font-serif text-xl font-semibold">Glory Nest</span>
             </div>
             <p className="text-muted-foreground text-sm leading-relaxed">
-              A boutique villa where comfort meets connection – steps from Ancient Town, 
-              moments from the beach.
+              {t('footer.description')}
             </p>
             <div className="flex items-center space-x-1 text-sm text-primary">
               <Heart className="w-4 h-4" />
-              <span>Supporting local families through our E-Fund</span>
+              <span>{t('footer.efundSupport')}</span>
             </div>
           </div>
 
           {/* Quick Links */}
           <div className="space-y-4">
-            <h3 className="font-semibold text-foreground">Quick Links</h3>
+            <h3 className="font-semibold text-foreground">{t('footer.quickLinks')}</h3>
             <ul className="space-y-2 text-sm">
               <li>
                 <Link to="/booking" className="text-muted-foreground hover:text-primary transition-smooth">
-                  Book Now
+                  {t('footer.bookNow')}
                 </Link>
               </li>
               <li>
                 <Link to="/story" className="text-muted-foreground hover:text-primary transition-smooth">
-                  Our Story
+                  {t('footer.ourStory')}
                 </Link>
               </li>
               <li>
                 <Link to="/efund" className="text-muted-foreground hover:text-primary transition-smooth">
-                  E-Fund Initiative
+                  {t('footer.efundInitiative')}
                 </Link>
               </li>
               <li>
                 <Link to="/journal" className="text-muted-foreground hover:text-primary transition-smooth">
-                  Travel Journal
+                  {t('footer.travelJournal')}
                 </Link>
               </li>
             </ul>
@@ -56,7 +58,7 @@ const Footer = () => {
 
           {/* Contact Info */}
           <div className="space-y-4">
-            <h3 className="font-semibold text-foreground">Get in Touch</h3>
+            <h3 className="font-semibold text-foreground">{t('footer.getInTouch')}</h3>
             <div className="space-y-3 text-sm">
               <div className="flex items-center space-x-2">
                 <Phone className="w-4 h-4 text-primary" />
@@ -78,16 +80,16 @@ const Footer = () => {
 
           {/* CTA */}
           <div className="space-y-4">
-            <h3 className="font-semibold text-foreground">Stay Connected</h3>
+            <h3 className="font-semibold text-foreground">{t('footer.stayConnected')}</h3>
             <p className="text-sm text-muted-foreground">
-              Ready to make Glory Nest your home away from home?
+              {t('footer.readyToStay')}
             </p>
             <div className="space-y-3">
               <Button className="w-full h-12 bg-primary hover:bg-primary/90 text-primary-foreground font-bold shadow-lg border-0 transition-all duration-300 hover:scale-105" asChild>
-                <Link to="/booking">Book Your Stay</Link>
+                <Link to="/booking">{t('footer.bookYourStay')}</Link>
               </Button>
               <Button variant="outline" size="sm" className="w-full" asChild>
-                <Link to="/contact">Contact Us</Link>
+                <Link to="/contact">{t('footer.contactUs')}</Link>
               </Button>
             </div>
           </div>
@@ -97,14 +99,14 @@ const Footer = () => {
         <div className="mt-12 pt-8 border-t border-primary/10">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-sm text-muted-foreground">
-              © 2025 Glory Nest. All rights reserved. Built with love in Hoi An.
+              {t('footer.copyright')}
             </p>
             <div className="flex space-x-6 text-sm">
               <Link to="/privacy" className="text-muted-foreground hover:text-primary transition-smooth">
-                Privacy Policy
+                {t('footer.privacy')}
               </Link>
               <Link to="/terms" className="text-muted-foreground hover:text-primary transition-smooth">
-                Terms of Service
+                {t('footer.terms')}
               </Link>
             </div>
           </div>
@@ -119,7 +121,7 @@ const Footer = () => {
           asChild
         >
           <Link to="/booking">
-            Book Now
+            {t('footer.floatingCta')}
           </Link>
         </Button>
       </div>

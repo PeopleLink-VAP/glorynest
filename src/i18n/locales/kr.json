@@ -1,0 +1,96 @@
+{
+  "navigation": {
+    "home": "홈",
+    "story": "우리 이야기",
+    "booking": "예약",
+    "contact": "연락처",
+    "faq": "자주 묻는 질문",
+    "journal": "저널",
+    "efund": "e-Fund"
+  },
+  "hero": {
+    "title": "글로리 네스트에 오신 것을 환영합니다",
+    "subtitle": "호이안의 프라이빗 빌라 sanctuary",
+    "description": "침실 2개, 완비된 주방, 수영장 및 거실 공간을 갖춘 전용 프라이빗 빌라. 아이가 있는 가족이나 로맨틱한 신혼여행에 완벽합니다!",
+    "bookNow": "프라이빗 빌라 예약",
+    "learnMore": "더 알아보기",
+    "specialBadge": "전용 프라이빗 빌라 • 가족 & 신혼여행 패키지",
+    "pricePerNight": "1박당",
+    "efundLabel": "전자 펀드",
+    "impactStay": "의미있는 숙박",
+    "walkTo": "도보로",
+    "oldTown": "구시가지"
+  },
+  "booking": {
+    "title": "숙박 예약",
+    "checkIn": "체크인",
+    "checkOut": "체크아웃",
+    "guests": "투숙객",
+    "rooms": "객실",
+    "search": "예약 가능 여부 검색",
+    "reserve": "지금 예약"
+  },
+  "contact": {
+    "title": "연락처",
+    "name": "이름",
+    "email": "이메일",
+    "message": "메시지",
+    "send": "메시지 보내기",
+    "phone": "전화번호",
+    "address": "주소"
+  },
+  "story": {
+    "title": "우리 이야기",
+    "subtitle": "글로리 네스트의 마음을 발견하세요",
+    "description": "우리의 여정과 특별함에 대해 알아보세요"
+  },
+  "faq": {
+    "title": "자주 묻는 질문",
+    "subtitle": "일반적인 질문에 대한 답변을 찾아보세요"
+  },
+  "testimonials": {
+    "title": "고객 후기",
+    "subtitle": "실제 고객의 실제 경험"
+  },
+  "location": {
+    "title": "위치",
+    "subtitle": "도심 중심가에서 저희를 찾아보세요"
+  },
+  "rooms": {
+    "title": "객실",
+    "subtitle": "모든 필요에 맞는 편안한 숙박 시설",
+    "viewAll": "모든 객실 보기"
+  },
+  "footer": {
+    "description": "편안함과 연결이 만나는 부티크 빌라 – 고대 도시에서 몇 걸음, 해변에서 몇 분 거리.",
+    "efundSupport": "전자 펀드를 통해 지역 가족들을 지원합니다",
+    "quickLinks": "빠른 링크",
+    "bookNow": "지금 예약",
+    "ourStory": "우리 이야기",
+    "efundInitiative": "전자 펀드 이니셔티브",
+    "travelJournal": "여행 저널",
+    "getInTouch": "연락하기",
+    "stayConnected": "연결 유지",
+    "readyToStay": "글로리 네스트를 집 같은 곳으로 만들 준비가 되셨나요?",
+    "bookYourStay": "숙박 예약",
+    "contactUs": "문의하기",
+    "copyright": "© 2025 글로리 네스트. 모든 권리 보유. 호이안에서 사랑으로 제작.",
+    "privacy": "개인정보 보호정책",
+    "terms": "서비스 약관",
+    "floatingCta": "지금 예약"
+  },
+  "common": {
+    "loading": "로딩 중...",
+    "error": "오류가 발생했습니다",
+    "success": "성공!",
+    "cancel": "취소",
+    "confirm": "확인",
+    "close": "닫기",
+    "save": "저장",
+    "edit": "편집",
+    "delete": "삭제",
+    "back": "뒤로",
+    "next": "다음",
+    "previous": "이전"
+  }
+}

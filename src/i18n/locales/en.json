@@ -1,0 +1,96 @@
+{
+  "navigation": {
+    "home": "Home",
+    "story": "Our Story",
+    "booking": "Booking",
+    "contact": "Contact",
+    "faq": "FAQ",
+    "journal": "Journal",
+    "efund": "E-Fund"
+  },
+  "hero": {
+    "title": "Welcome to Glory Nest",
+    "subtitle": "Your Private Villa Sanctuary in Hoi An",
+    "description": "Entire private villa with 2 bedrooms, full kitchen, pool & living space. Perfect for families with kids or romantic honeymoon getaways!",
+    "bookNow": "Book Your Private Villa",
+    "learnMore": "Learn More",
+    "specialBadge": "Entire Private Villa • Family & Honeymoon Packages",
+    "pricePerNight": "per night",
+    "efundLabel": "E-Fund",
+    "impactStay": "Impact Stay",
+    "walkTo": "Walk to",
+    "oldTown": "Old Town"
+  },
+  "booking": {
+    "title": "Book Your Stay",
+    "checkIn": "Check In",
+    "checkOut": "Check Out",
+    "guests": "Guests",
+    "rooms": "Rooms",
+    "search": "Search Availability",
+    "reserve": "Reserve Now"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send Message",
+    "phone": "Phone",
+    "address": "Address"
+  },
+  "story": {
+    "title": "Our Story",
+    "subtitle": "Discover the heart behind Glory Nest",
+    "description": "Learn about our journey and what makes us special"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Find answers to common questions"
+  },
+  "testimonials": {
+    "title": "What Our Guests Say",
+    "subtitle": "Real experiences from real guests"
+  },
+  "location": {
+    "title": "Our Location",
+    "subtitle": "Find us in the heart of the city"
+  },
+  "rooms": {
+    "title": "Our Rooms",
+    "subtitle": "Comfortable accommodations for every need",
+    "viewAll": "View All Rooms"
+  },
+  "footer": {
+    "description": "A boutique villa where comfort meets connection – steps from Ancient Town, moments from the beach.",
+    "efundSupport": "Supporting local families through our E-Fund",
+    "quickLinks": "Quick Links",
+    "bookNow": "Book Now",
+    "ourStory": "Our Story",
+    "efundInitiative": "E-Fund Initiative",
+    "travelJournal": "Travel Journal",
+    "getInTouch": "Get in Touch",
+    "stayConnected": "Stay Connected",
+    "readyToStay": "Ready to make Glory Nest your home away from home?",
+    "bookYourStay": "Book Your Stay",
+    "contactUs": "Contact Us",
+    "copyright": "© 2025 Glory Nest. All rights reserved. Built with love in Hoi An.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "floatingCta": "Book Now"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "success": "Success!",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "close": "Close",
+    "save": "Save",
+    "edit": "Edit",
+    "delete": "Delete",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous"
+  }
+}

@@ -1,10 +1,13 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { MapPin, Star, Heart, Users, Calendar, Sparkles } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import ContactDialog from "./ContactDialog";
 import villaHero from "@/assets/villa-hero.jpg";
 
 const HeroSection = () => {
+  const { t } = useTranslation();
+  
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Hero Image Background */}
@@ -36,7 +39,7 @@ const HeroSection = () => {
           {/* Special Badge */}
           <div className="inline-flex items-center space-x-3 glass-card px-6 py-3 text-sm font-medium">
             <Sparkles className="w-5 h-5 text-primary" />
-            <span className="text-foreground">Entire Private Villa • Family & Honeymoon Packages</span>
+            <span className="text-foreground">{t('hero.specialBadge')}</span>
             <Sparkles className="w-5 h-5 text-primary" />
           </div>
 
@@ -46,15 +49,13 @@ const HeroSection = () => {
               Glory Nest
             </h1>
             <p className="font-sans text-2xl md:text-3xl lg:text-4xl font-light text-white leading-relaxed">
-              Your Private Villa Sanctuary in Hoi An
+              {t('hero.subtitle')}
             </p>
           </div>
 
           {/* Compelling Subline */}
           <p className="font-sans text-lg md:text-xl text-white/80 max-w-3xl mx-auto leading-relaxed">
-            Entire private villa with 2 bedrooms, full kitchen, pool & living space. 
-            <br className="hidden md:block" />
-            Perfect for families with kids or romantic honeymoon getaways!
+            {t('hero.description')}
           </p>
 
 
@@ -66,7 +67,7 @@ const HeroSection = () => {
               className="min-w-72 h-20 text-xl font-semibold bg-primary hover:bg-primary/90 shadow-xl text-black border-0"
               >
                 <Calendar className="w-6 h-6 mr-3" />
-                Book Your Private Villa
+                {t('hero.bookNow')}
               </Button>
             </ContactDialog>
           </div>
@@ -80,7 +81,7 @@ const HeroSection = () => {
                 </div>
                 <div>
                   <div className="text-lg font-bold text-gray-900">3.5M VND</div>
-                  <div className="text-xs text-gray-700">per night</div>
+                  <div className="text-xs text-gray-700">{t('hero.pricePerNight')}</div>
                 </div>
               </div>
             </div>
@@ -90,8 +91,8 @@ const HeroSection = () => {
                   <Heart className="w-5 h-5 text-accent" />
                 </div>
                 <div>
-                  <div className="text-lg font-bold text-gray-900">E-Fund</div>
-                  <div className="text-xs text-gray-700">Impact Stay</div>
+                  <div className="text-lg font-bold text-gray-900">{t('hero.efundLabel')}</div>
+                  <div className="text-xs text-gray-700">{t('hero.impactStay')}</div>
                 </div>
               </div>
             </div>
@@ -101,8 +102,8 @@ const HeroSection = () => {
                   <MapPin className="w-5 h-5 text-primary" />
                 </div>
                 <div>
-                  <div className="text-lg font-bold text-gray-900">Walk to</div>
-                  <div className="text-xs text-gray-700">Old Town</div>
+                  <div className="text-lg font-bold text-gray-900">{t('hero.walkTo')}</div>
+                  <div className="text-xs text-gray-700">{t('hero.oldTown')}</div>
                 </div>
               </div>
             </div>

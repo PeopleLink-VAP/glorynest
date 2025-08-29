@@ -2,19 +2,22 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Phone, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useTranslation } from "react-i18next";
 import ContactDialog from "./ContactDialog";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
+  const { t } = useTranslation();
 
   const mainNavItems = [
-    { href: "/", label: "Home" },
-    { href: "/story", label: "Our Story" },
-    { href: "/booking", label: "Book Now" },
-    { href: "/efund", label: "E-Fund" },
-    { href: "/journal", label: "Journal" },
-    { href: "/contact", label: "Contact" }
+    { href: "/", label: t('navigation.home') },
+    { href: "/story", label: t('navigation.story') },
+    { href: "/booking", label: t('navigation.booking') },
+    { href: "/efund", label: t('navigation.efund') },
+    { href: "/journal", label: t('navigation.journal') },
+    { href: "/contact", label: t('navigation.contact') }
   ];
 
   const isActive = (path: string) => location.pathname === path;
@@ -47,6 +50,7 @@ const Navigation = () => {
 
           {/* CTA Buttons */}
           <div className="hidden lg:flex items-center space-x-4">
+            <LanguageSwitcher />
             <ContactDialog variant="contact">
               <Button variant="outline" size="sm">
                 <Phone className="w-4 h-4 mr-2" />
@@ -55,7 +59,7 @@ const Navigation = () => {
             </ContactDialog>
             <ContactDialog variant="booking">
               <Button variant="default" size="sm" className="bg-primary hover:bg-primary/90 text-primary-foreground">
-                Book Villa
+                {t('booking.reserve')}
               </Button>
             </ContactDialog>
           </div>
@@ -86,6 +90,7 @@ const Navigation = () => {
                 </Link>
               ))}
               <div className="pt-4 space-y-3">
+                <LanguageSwitcher />
                 <ContactDialog variant="contact">
                   <Button variant="outline" size="sm" className="w-full">
                     <Phone className="w-4 h-4 mr-2" />
@@ -94,7 +99,7 @@ const Navigation = () => {
                 </ContactDialog>
                 <ContactDialog variant="booking">
                   <Button variant="default" size="sm" className="w-full bg-primary text-primary-foreground">
-                    Book Villa
+                    {t('booking.reserve')}
                   </Button>
                 </ContactDialog>
               </div>

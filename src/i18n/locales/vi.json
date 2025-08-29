@@ -1,0 +1,96 @@
+{
+  "navigation": {
+    "home": "Trang Chủ",
+    "story": "Câu Chuyện",
+    "booking": "Đặt Phòng",
+    "contact": "Liên Hệ",
+    "faq": "Câu Hỏi",
+    "journal": "Nhật Ký",
+    "efund": "e-Fund"
+  },
+  "hero": {
+    "title": "Chào Mừng Đến Glory Nest",
+    "subtitle": "Biệt Thự Riêng Tư Của Bạn Tại Hội An",
+    "description": "Toàn bộ biệt thự riêng với 2 phòng ngủ, bếp đầy đủ, hồ bơi & không gian sinh hoạt. Hoàn hảo cho gia đình có trẻ em hoặc tuần trăng mật lãng mạn!",
+    "bookNow": "Đặt Biệt Thự Riêng",
+    "learnMore": "Tìm Hiểu Thêm",
+    "specialBadge": "Toàn Bộ Biệt Thự Riêng • Gói Gia Đình & Tuần Trăng Mật",
+    "pricePerNight": "mỗi đêm",
+    "efundLabel": "Quỹ Điện Tử",
+    "impactStay": "Lưu Trú Có Ý Nghĩa",
+    "walkTo": "Đi Bộ Đến",
+    "oldTown": "Phố Cổ"
+  },
+  "booking": {
+    "title": "Đặt Phòng",
+    "checkIn": "Nhận Phòng",
+    "checkOut": "Trả Phòng",
+    "guests": "Khách",
+    "rooms": "Phòng",
+    "search": "Tìm Phòng Trống",
+    "reserve": "Đặt Ngay"
+  },
+  "contact": {
+    "title": "Liên Hệ",
+    "name": "Tên",
+    "email": "Email",
+    "message": "Tin Nhắn",
+    "send": "Gửi Tin Nhắn",
+    "phone": "Điện Thoại",
+    "address": "Địa Chỉ"
+  },
+  "story": {
+    "title": "Câu Chuyện Của Chúng Tôi",
+    "subtitle": "Khám phá trái tim đằng sau Glory Nest",
+    "description": "Tìm hiểu về hành trình và điều đặc biệt của chúng tôi"
+  },
+  "faq": {
+    "title": "Câu Hỏi Thường Gặp",
+    "subtitle": "Tìm câu trả lời cho các câu hỏi phổ biến"
+  },
+  "testimonials": {
+    "title": "Khách Hàng Nói Gì",
+    "subtitle": "Trải nghiệm thực từ khách hàng thực"
+  },
+  "location": {
+    "title": "Vị Trí",
+    "subtitle": "Tìm chúng tôi ở trung tâm thành phố"
+  },
+  "rooms": {
+    "title": "Phòng Nghỉ",
+    "subtitle": "Chỗ ở thoải mái cho mọi nhu cầu",
+    "viewAll": "Xem Tất Cả Phòng"
+  },
+  "footer": {
+    "description": "Một biệt thự boutique nơi sự thoải mái gặp gỡ kết nối – cách Phố Cổ vài bước chân, cách bãi biển vài phút.",
+    "efundSupport": "Hỗ trợ các gia đình địa phương thông qua Quỹ Điện Tử",
+    "quickLinks": "Liên Kết Nhanh",
+    "bookNow": "Đặt Ngay",
+    "ourStory": "Câu Chuyện",
+    "efundInitiative": "Sáng Kiến Quỹ Điện Tử",
+    "travelJournal": "Nhật Ký Du Lịch",
+    "getInTouch": "Liên Hệ",
+    "stayConnected": "Kết Nối",
+    "readyToStay": "Sẵn sàng biến Glory Nest thành ngôi nhà thứ hai của bạn?",
+    "bookYourStay": "Đặt Chỗ Nghỉ",
+    "contactUs": "Liên Hệ Chúng Tôi",
+    "copyright": "© 2025 Glory Nest. Tất cả quyền được bảo lưu. Được xây dựng với tình yêu tại Hội An.",
+    "privacy": "Chính Sách Bảo Mật",
+    "terms": "Điều Khoản Dịch Vụ",
+    "floatingCta": "Đặt Ngay"
+  },
+  "common": {
+    "loading": "Đang tải...",
+    "error": "Đã xảy ra lỗi",
+    "success": "Thành công!",
+    "cancel": "Hủy",
+    "confirm": "Xác nhận",
+    "close": "Đóng",
+    "save": "Lưu",
+    "edit": "Chỉnh sửa",
+    "delete": "Xóa",
+    "back": "Quay lại",
+    "next": "Tiếp theo",
+    "previous": "Trước đó"
+  }
+}
