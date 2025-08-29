@@ -9,9 +9,11 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Badge } from "@/components/ui/badge";
 import ContactDialog from "@/components/ContactDialog";
-import sparrowIcon from "@/assets/sparrow-icon.png";
+import { getSparrowIcon } from "@/lib/sparrowUtils";
 
 const Booking = () => {
+  const sparrowIcon1 = getSparrowIcon();
+  const sparrowIcon2 = getSparrowIcon();
   const [selectedDates, setSelectedDates] = useState({ checkin: "", checkout: "" });
   const [guests, setGuests] = useState({ adults: 2, children: 0 });
 
@@ -72,11 +74,11 @@ const Booking = () => {
       <main className="pt-24 pb-20">
         {/* Hero Section */}
         <section className="py-20 bg-primary/5 relative overflow-hidden">
-          <div className="absolute top-10 left-10 opacity-30 animate-float">
-            <img src={sparrowIcon} alt="" className="w-12 h-12" />
+          <div className="absolute top-10 left-10 opacity-30">
+            <img src={sparrowIcon1} alt="" className="w-12 h-12" />
           </div>
-          <div className="absolute bottom-16 right-12 opacity-20 animate-float" style={{animationDelay: '2s'}}>
-            <img src={sparrowIcon} alt="" className="w-10 h-10 transform scale-x-[-1]" />
+          <div className="absolute bottom-16 right-12 opacity-20">
+            <img src={sparrowIcon2} alt="" className="w-10 h-10 transform scale-x-[-1]" />
           </div>
           
           <div className="container mx-auto px-4">

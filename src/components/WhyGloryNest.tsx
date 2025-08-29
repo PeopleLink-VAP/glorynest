@@ -1,7 +1,9 @@
 import { Home, ChefHat, Users, Heart, Sparkles } from "lucide-react";
-import sparrowIcon from "@/assets/sparrow-icon.png";
+import { getSparrowIcon } from "@/lib/sparrowUtils";
 
 const WhyGloryNest = () => {
+  const sparrowIcon1 = getSparrowIcon();
+  const sparrowIcon2 = getSparrowIcon();
   const features = [
     {
       icon: Home,
@@ -29,10 +31,10 @@ const WhyGloryNest = () => {
     <section className="py-20 bg-background relative overflow-hidden">
       {/* Decorative sparrows */}
       <div className="absolute top-10 left-10 opacity-30">
-        <img src={sparrowIcon} alt="" className="w-12 h-12" />
+        <img src={sparrowIcon1} alt="" className="w-12 h-12" />
       </div>
       <div className="absolute top-32 right-20 opacity-20">
-        <img src={sparrowIcon} alt="" className="w-8 h-8 transform scale-x-[-1]" />
+        <img src={sparrowIcon2} alt="" className="w-8 h-8 transform scale-x-[-1]" />
       </div>
       
       <div className="container mx-auto px-4">
@@ -73,7 +75,7 @@ const WhyGloryNest = () => {
                 
                 {/* Decorative element */}
                 <div className="absolute bottom-4 right-4 opacity-10">
-                  <img src={sparrowIcon} alt="" className="w-6 h-6" />
+                  <img src={getSparrowIcon()} alt="" className="w-6 h-6" />
                 </div>
               </div>
             </div>

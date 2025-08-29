@@ -2,9 +2,11 @@ import { Sunrise, Coffee, BookOpen, Sunset, Sparkles } from "lucide-react";
 import cozyBreakfast from "@/assets/cozy-breakfast.jpg";
 import homeCooking from "@/assets/home-cooking.jpg";
 import readingCorner from "@/assets/reading-corner.jpg";
-import sparrowIcon from "@/assets/sparrow-icon.png";
+import { getSparrowIcon } from "@/lib/sparrowUtils";
 
 const ImagineYourStay = () => {
+  const sparrowIcon1 = getSparrowIcon();
+  const sparrowIcon2 = getSparrowIcon();
   const moments = [
     {
       icon: Coffee,
@@ -33,10 +35,10 @@ const ImagineYourStay = () => {
     <section className="py-20 bg-secondary/3 relative overflow-hidden">
       {/* Decorative sparrows */}
       <div className="absolute top-20 right-10 opacity-20">
-        <img src={sparrowIcon} alt="" className="w-10 h-10" />
+        <img src={sparrowIcon1} alt="" className="w-10 h-10" />
       </div>
       <div className="absolute bottom-32 left-8 opacity-30">
-        <img src={sparrowIcon} alt="" className="w-8 h-8 transform scale-x-[-1]" />
+        <img src={sparrowIcon2} alt="" className="w-8 h-8 transform scale-x-[-1]" />
       </div>
       
       <div className="container mx-auto px-4 relative z-10">
@@ -81,7 +83,7 @@ const ImagineYourStay = () => {
                   
                   {/* Decorative sparrow */}
                   <div className="absolute top-4 right-4 opacity-10">
-                    <img src={sparrowIcon} alt="" className="w-6 h-6" />
+                    <img src={getSparrowIcon()} alt="" className="w-6 h-6" />
                   </div>
                 </div>
               </div>
