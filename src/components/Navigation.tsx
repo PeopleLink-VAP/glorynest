@@ -54,7 +54,7 @@ const Navigation = () => {
               </Button>
             </ContactDialog>
             <ContactDialog variant="booking">
-              <Button variant="default" size="sm" className="bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90">
+              <Button variant="default" size="sm" className="bg-primary hover:bg-primary/90 text-primary-foreground">
                 Book Villa
               </Button>
             </ContactDialog>
@@ -93,7 +93,7 @@ const Navigation = () => {
                   </Button>
                 </ContactDialog>
                 <ContactDialog variant="booking">
-                  <Button variant="default" size="sm" className="w-full bg-gradient-to-r from-primary to-secondary">
+                  <Button variant="default" size="sm" className="w-full bg-primary text-primary-foreground">
                     Book Villa
                   </Button>
                 </ContactDialog>

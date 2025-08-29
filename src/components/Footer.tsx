@@ -83,7 +83,7 @@ const Footer = () => {
               Ready to make Glory Nest your home away from home?
             </p>
             <div className="space-y-3">
-              <Button className="w-full h-12 bg-gradient-to-r from-primary via-secondary to-accent hover:from-primary/90 hover:via-secondary/90 hover:to-accent/90 text-white font-bold shadow-xl border-0 transition-all duration-300 hover:scale-105" asChild>
+              <Button className="w-full h-12 bg-primary hover:bg-primary/90 text-primary-foreground font-bold shadow-lg border-0 transition-all duration-300 hover:scale-105" asChild>
                 <Link to="/booking">Book Your Stay</Link>
               </Button>
               <Button variant="outline" size="sm" className="w-full" asChild>
@@ -115,7 +115,7 @@ const Footer = () => {
       <div className="fixed bottom-6 right-6 z-40">
         <Button 
           size="lg" 
-          className="h-14 px-8 bg-gradient-to-r from-primary via-secondary to-accent hover:from-primary/90 hover:via-secondary/90 hover:to-accent/90 text-white font-bold shadow-2xl border-0 animate-float transition-all duration-300 hover:scale-105"
+          className="h-14 px-8 bg-primary hover:bg-primary/90 text-primary-foreground font-bold shadow-xl border-0 animate-float transition-all duration-300 hover:scale-105"
           asChild
         >
           <Link to="/booking">

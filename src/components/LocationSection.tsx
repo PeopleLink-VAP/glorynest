@@ -74,7 +74,7 @@ const LocationSection = () => {
           </div>
 
           <div className="animate-fade-up" style={{ animationDelay: '0.2s' }}>
-            <div className="glass-card p-8 aspect-square bg-gradient-to-br from-primary/10 to-secondary/20 relative overflow-hidden">
+            <div className="glass-card p-8 aspect-square bg-primary/8 relative overflow-hidden">
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="text-center">
                   <MapPin className="w-16 h-16 text-primary mx-auto mb-4" />

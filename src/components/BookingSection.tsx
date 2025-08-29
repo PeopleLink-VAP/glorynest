@@ -5,7 +5,7 @@ import sparrowIcon from "@/assets/sparrow-icon.png";
 
 const BookingSection = () => {
   return (
-    <section className="py-20 bg-gradient-to-br from-primary/5 via-background to-secondary/10 relative overflow-hidden">
+    <section className="py-20 bg-primary/3 relative overflow-hidden">
       {/* Decorative sparrows */}
       <div className="absolute top-16 left-12 opacity-25 animate-float">
         <img src={sparrowIcon} alt="" className="w-10 h-10" />
@@ -76,7 +76,7 @@ const BookingSection = () => {
                 <ContactDialog variant="booking">
                   <Button 
                     size="lg" 
-                    className="min-w-48 h-16 text-lg font-bold bg-gradient-to-r from-primary via-secondary to-accent hover:from-primary/90 hover:via-secondary/90 hover:to-accent/90 shadow-2xl text-white border-0 transition-all duration-300 hover:scale-105"
+                    className="min-w-48 h-16 text-lg font-bold bg-primary hover:bg-primary/90 shadow-xl text-primary-foreground border-0 transition-all duration-300 hover:scale-105"
                   >
                     <Calendar className="w-6 h-6 mr-3" />
                     Book Now

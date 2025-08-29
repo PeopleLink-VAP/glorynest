@@ -71,7 +71,7 @@ const Booking = () => {
       
       <main className="pt-24 pb-20">
         {/* Hero Section */}
-        <section className="py-20 bg-gradient-to-br from-primary/10 via-background to-secondary/10 relative overflow-hidden">
+        <section className="py-20 bg-primary/5 relative overflow-hidden">
           <div className="absolute top-10 left-10 opacity-30 animate-float">
             <img src={sparrowIcon} alt="" className="w-12 h-12" />
           </div>
@@ -215,7 +215,7 @@ const Booking = () => {
                   {/* Book Button */}
                   <ContactDialog variant="booking">
                     <Button
-                      className="w-full h-16 text-lg font-bold bg-gradient-to-r from-primary via-secondary to-accent hover:from-primary/90 hover:via-secondary/90 hover:to-accent/90 shadow-2xl text-white border-0 transition-all duration-300 hover:scale-105"
+                      className="w-full h-16 text-lg font-bold bg-primary hover:bg-primary/90 shadow-xl text-primary-foreground border-0 transition-all duration-300 hover:scale-105"
                       disabled={!selectedDates.checkin || !selectedDates.checkout || calculateNights() === 0}
                     >
                       <CalendarIcon className="w-6 h-6 mr-3" />

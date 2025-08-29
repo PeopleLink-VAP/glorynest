@@ -105,7 +105,7 @@ const ContactDialog = ({
       </DialogTrigger>
       <DialogContent className="sm:max-w-2xl glass-card border-0 backdrop-blur-2xl bg-background/95 shadow-2xl">
         <DialogHeader className="text-center space-y-4">
-          <div className="mx-auto w-16 h-16 rounded-2xl bg-gradient-to-br from-primary via-secondary to-accent flex items-center justify-center shadow-lg">
+          <div className="mx-auto w-16 h-16 rounded-2xl bg-primary flex items-center justify-center shadow-lg">
             {config.icon}
           </div>
           <div className="inline-flex items-center space-x-2 glass-card px-4 py-2">
@@ -307,7 +307,7 @@ const ContactDialog = ({
             </Button>
             <Button 
               type="submit"
-              className="flex-1 h-12 text-lg font-semibold bg-gradient-to-r from-primary via-secondary to-accent hover:from-primary/90 hover:via-secondary/90 hover:to-accent/90 shadow-xl text-white"
+              className="flex-1 h-12 text-lg font-semibold bg-primary hover:bg-primary/90 shadow-lg text-primary-foreground"
               disabled={variant === 'booking' && (!formData.checkin || !formData.checkout || calculateNights() === 0)}
             >
               <Calendar className="w-5 h-5 mr-2" />

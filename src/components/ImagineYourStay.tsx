@@ -30,7 +30,7 @@ const ImagineYourStay = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-background to-secondary/5 relative overflow-hidden">
+    <section className="py-20 bg-secondary/3 relative overflow-hidden">
       {/* Decorative sparrows */}
       <div className="absolute top-20 right-10 opacity-20 animate-float">
         <img src={sparrowIcon} alt="" className="w-10 h-10" />

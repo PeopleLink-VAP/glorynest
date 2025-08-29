@@ -14,7 +14,7 @@ const HeroSection = () => {
           alt="Glory Nest Villa - Your perfect family getaway in Hoi An"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/40 via-secondary/30 to-accent/40"></div>
+        <div className="absolute inset-0 bg-primary/30"></div>
         <div className="absolute inset-0 backdrop-blur-[2px]"></div>
       </div>
       
@@ -62,8 +62,8 @@ const HeroSection = () => {
           <div className="flex justify-center">
             <ContactDialog variant="booking">
               <Button 
-                size="lg" 
-                className="min-w-72 h-20 text-xl font-semibold bg-gradient-to-r from-primary via-secondary to-accent hover:from-primary/90 hover:via-secondary/90 hover:to-accent/90 shadow-2xl text-white border-0"
+              size="lg" 
+              className="min-w-72 h-20 text-xl font-semibold bg-primary hover:bg-primary/90 shadow-xl text-primary-foreground border-0"
               >
                 <Calendar className="w-6 h-6 mr-3" />
                 Book Your Private Villa

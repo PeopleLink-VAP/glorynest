@@ -31,7 +31,7 @@ const RoomsSnapshot = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-secondary/40 to-accent/30">
+    <section className="py-20 bg-secondary/8">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-up">
           <div className="inline-flex items-center space-x-2 glass-card px-4 py-2 mb-6">
@@ -86,7 +86,7 @@ const RoomsSnapshot = () => {
                   alt={pkg.name}
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+                <div className="absolute inset-0 bg-black/25"></div>
                 <div className="absolute top-4 left-4">
                   <div className="flex items-center space-x-2 glass-card px-3 py-2 text-white">
                     {pkg.icon}
@@ -122,7 +122,7 @@ const RoomsSnapshot = () => {
 
                 <ContactDialog variant={pkg.variant}>
                   <Button 
-                    className="w-full bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90"
+                    className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
                     size="lg"
                   >
                     Choose {pkg.name}

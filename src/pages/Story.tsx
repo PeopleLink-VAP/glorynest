@@ -87,7 +87,7 @@ const Story = () => {
               </div>
 
               <div className="text-center">
-                <Button size="lg" className="h-14 px-8 bg-gradient-to-r from-primary via-secondary to-accent hover:from-primary/90 hover:via-secondary/90 hover:to-accent/90 text-white font-bold shadow-xl border-0 transition-all duration-300 hover:scale-105" asChild>
+                <Button size="lg" className="h-14 px-8 bg-primary hover:bg-primary/90 text-primary-foreground font-bold shadow-lg border-0 transition-all duration-300 hover:scale-105" asChild>
                     <Link to="/booking">Be Part of Our Story – Book Your Stay</Link>
                   </Button>
               </div>

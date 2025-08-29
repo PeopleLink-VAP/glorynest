@@ -44,8 +44,8 @@ const OurStoryTeaser = () => {
             animationDelay: '0.2s'
           }}>
               <div className="glass-card p-8 space-y-6">
-                <div className="aspect-[4/3] bg-gradient-to-br from-primary/20 to-secondary/30 rounded-xl relative overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                <div className="aspect-[4/3] bg-primary/15 rounded-xl relative overflow-hidden">
+                  <div className="absolute inset-0 bg-black/15"></div>
                   <div className="absolute bottom-4 left-4 text-white">
                     <p className="text-sm font-medium">Trinh &amp; David</p>
                     <p className="text-xs opacity-90">Your hosts at Glory Nest</p>

@@ -70,8 +70,8 @@ const Journal = () => {
                   className="glass-card border-0 overflow-hidden group hover:scale-105 transition-glass animate-fade-up"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  <div className="aspect-[16/10] bg-gradient-to-br from-primary/20 to-secondary/40 relative overflow-hidden">
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+                  <div className="aspect-[16/10] bg-primary/15 relative overflow-hidden">
+                    <div className="absolute inset-0 bg-black/25"></div>
                     <div className="absolute bottom-4 left-4 text-white">
                       <span className="text-sm opacity-90">{post.readTime}</span>
                     </div>
