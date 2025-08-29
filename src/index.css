@@ -16,17 +16,17 @@
     --popover: 33 22% 93%;
     --popover-foreground: 0 0% 17%;
 
-    --primary: 14 55% 60%; /* Terracotta #D87C59 */
+    --primary: 25 85% 55%; /* Bright Holiday Orange */
     --primary-foreground: 33 22% 93%;
 
-    --secondary: 33 39% 85%; /* Soft Sand Beige #E9D7C4 */
+    --secondary: 45 95% 65%; /* Sunny Holiday Yellow */
     --secondary-foreground: 0 0% 17%;
 
-    --muted: 33 39% 85%;
+    --muted: 33 50% 90%;
     --muted-foreground: 0 0% 40%;
 
-    --accent: 14 55% 60%;
-    --accent-foreground: 33 22% 93%;
+    --accent: 15 80% 70%; /* Bright Coral */
+    --accent-foreground: 0 0% 17%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 33 22% 93%;
@@ -39,13 +39,14 @@
     
     /* Glassmorphism Effects */
     --glass-bg: 33 22% 93% / 0.8;
-    --glass-border: 14 55% 60% / 0.2;
-    --glass-shadow: 0 8px 32px 0 rgba(216, 124, 89, 0.1);
+    --glass-border: 25 85% 55% / 0.2;
+    --glass-shadow: 0 8px 32px 0 rgba(255, 138, 77, 0.15);
     
     /* Custom Gradients */
-    --gradient-warm: linear-gradient(135deg, hsl(14 55% 60%), hsl(33 39% 85%));
-    --gradient-soft: linear-gradient(180deg, hsl(33 22% 93%), hsl(33 39% 85%));
-    --gradient-hero: linear-gradient(135deg, hsl(14 55% 60% / 0.9), hsl(33 39% 85% / 0.8));
+    --gradient-warm: linear-gradient(135deg, hsl(25 85% 55%), hsl(45 95% 65%));
+    --gradient-soft: linear-gradient(180deg, hsl(33 22% 93%), hsl(45 95% 75%));
+    --gradient-hero: linear-gradient(135deg, hsl(25 85% 55% / 0.9), hsl(45 95% 65% / 0.8));
+    --gradient-nest: linear-gradient(45deg, hsl(15 80% 70%), hsl(25 85% 55%), hsl(45 95% 65%));
     
     /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);

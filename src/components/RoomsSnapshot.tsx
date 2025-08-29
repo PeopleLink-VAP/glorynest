@@ -1,121 +1,144 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Users, Bath, Wifi, Coffee } from "lucide-react";
+import { Users, Heart, Home, Baby, Sparkles } from "lucide-react";
+import ContactDialog from "./ContactDialog";
+import familyPool from "@/assets/family-pool.jpg";
+import honeymoonHoian from "@/assets/honeymoon-hoian.jpg";
 
 const RoomsSnapshot = () => {
-  const rooms = [
+  const packages = [
     {
-      name: "Romantic Nest",
-      description: "Cozy retreat with bathtub & soft lighting perfect for couples",
-      sleeps: "Sleeps 2",
+      name: "Family Package",
+      description: "Perfect for families with kids - private villa with pool, toys & safe spaces",
+      sleeps: "Up to 6 guests",
       price: "3,500,000 VND",
-      features: ["Private bathtub", "Soft lighting", "Cozy atmosphere"],
-      image: "/api/placeholder/400/300"
+      features: ["Kids toys & books", "Pool safety", "Family meals", "Local adventures"],
+      image: familyPool,
+      icon: <Baby className="w-6 h-6" />,
+      variant: "family" as const
     },
     {
-      name: "Poolside Suite",
-      description: "Steps to pool, airy space with tropical garden views",
-      sleeps: "Sleeps 2-3",
-      price: "4,200,000 VND",
-      features: ["Pool access", "Garden view", "Spacious layout"],
-      image: "/api/placeholder/400/300"
-    },
-    {
-      name: "Family Loft",
-      description: "Extra space for little ones with books, toys & family comforts",
-      sleeps: "Sleeps 3-4",
-      price: "5,000,000 VND",
-      features: ["Family-friendly", "Books & toys", "Extra space"],
-      image: "/api/placeholder/400/300"
+      name: "Honeymoon Package", 
+      description: "Romantic villa setup with special touches for your special moment",
+      sleeps: "Perfect for 2",
+      price: "3,500,000 VND",
+      features: ["Romantic setup", "Couples massage", "Private dining", "Sunset tours"],
+      image: honeymoonHoian,
+      icon: <Heart className="w-6 h-6" />,
+      variant: "honeymoon" as const
     }
   ];
 
   return (
-    <section className="py-20 bg-secondary/30">
+    <section className="py-20 bg-gradient-to-br from-secondary/40 to-accent/30">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-up">
+          <div className="inline-flex items-center space-x-2 glass-card px-4 py-2 mb-6">
+            <Sparkles className="w-5 h-5 text-primary" />
+            <span className="text-sm font-medium">Entire Private Villa</span>
+          </div>
           <h2 className="font-serif text-3xl md:text-5xl font-semibold text-foreground mb-6">
-            Your Perfect Nest Awaits
+            Choose Your Perfect Package
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Each room is designed as a private cocoon – modern comforts with touches of Vietnamese charm. 
-            Perfect for families, couples, or solo dreamers.
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+            Rent the entire villa with 2 bedrooms, full kitchen, living room & private pool. 
+            Choose between our family-friendly or romantic honeymoon experiences.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-          {rooms.map((room, index) => (
+        {/* Villa Features Banner */}
+        <div className="glass-card p-6 mb-12 max-w-4xl mx-auto">
+          <div className="flex items-center justify-center space-x-2 mb-4">
+            <Home className="w-6 h-6 text-primary" />
+            <h3 className="font-serif text-xl font-semibold">What You Get</h3>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+            <div>
+              <div className="font-semibold text-primary">2 Bedrooms</div>
+              <div className="text-sm text-muted-foreground">Queen & King beds</div>
+            </div>
+            <div>
+              <div className="font-semibold text-primary">Full Kitchen</div>
+              <div className="text-sm text-muted-foreground">Cook together</div>
+            </div>
+            <div>
+              <div className="font-semibold text-primary">Private Pool</div>
+              <div className="text-sm text-muted-foreground">Just for you</div>
+            </div>
+            <div>
+              <div className="font-semibold text-primary">Living Space</div>
+              <div className="text-sm text-muted-foreground">Relax & connect</div>
+            </div>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+          {packages.map((pkg, index) => (
             <Card 
-              key={room.name}
-              className="glass-card border-0 overflow-hidden group hover:scale-105 transition-glass animate-fade-up"
-              style={{ animationDelay: `${index * 0.1}s` }}
+              key={pkg.name}
+              className="glass-card border-0 overflow-hidden group hover:scale-105 transition-all duration-300 animate-fade-up"
+              style={{ animationDelay: `${index * 0.2}s` }}
             >
-              <div className="aspect-[4/3] bg-gradient-to-br from-primary/20 to-secondary/40 relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-                <div className="absolute bottom-4 left-4 text-white">
-                  <div className="flex items-center space-x-2 text-sm">
-                    <Users className="w-4 h-4" />
-                    <span>{room.sleeps}</span>
+              <div className="aspect-[16/10] relative overflow-hidden">
+                <img 
+                  src={pkg.image} 
+                  alt={pkg.name}
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+                <div className="absolute top-4 left-4">
+                  <div className="flex items-center space-x-2 glass-card px-3 py-2 text-white">
+                    {pkg.icon}
+                    <span className="text-sm font-medium">{pkg.sleeps}</span>
+                  </div>
+                </div>
+                <div className="absolute bottom-4 right-4">
+                  <div className="glass-card px-3 py-2">
+                    <div className="text-xs text-white/80">From</div>
+                    <div className="font-semibold text-white">{pkg.price}/night</div>
                   </div>
                 </div>
               </div>
               
-              <CardContent className="p-6">
-                <div className="mb-4">
-                  <h3 className="font-serif text-xl font-semibold text-foreground mb-2">
-                    {room.name}
+              <CardContent className="p-8">
+                <div className="mb-6">
+                  <h3 className="font-serif text-2xl font-semibold text-foreground mb-3">
+                    {pkg.name}
                   </h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed">
-                    {room.description}
+                  <p className="text-muted-foreground leading-relaxed">
+                    {pkg.description}
                   </p>
                 </div>
 
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {room.features.map((feature) => (
-                    <span 
-                      key={feature}
-                      className="px-3 py-1 bg-primary/10 text-primary text-xs rounded-full"
-                    >
-                      {feature}
-                    </span>
+                <div className="grid grid-cols-2 gap-2 mb-6">
+                  {pkg.features.map((feature) => (
+                    <div key={feature} className="flex items-center space-x-2">
+                      <Sparkles className="w-3 h-3 text-primary" />
+                      <span className="text-sm text-muted-foreground">{feature}</span>
+                    </div>
                   ))}
                 </div>
 
-                <div className="flex items-center justify-between mb-4">
-                  <div>
-                    <span className="text-sm text-muted-foreground">From</span>
-                    <p className="font-semibold text-primary">{room.price}/night</p>
-                  </div>
-                </div>
-
-                <div className="flex space-x-2">
+                <ContactDialog variant={pkg.variant}>
                   <Button 
-                    variant="outline" 
-                    size="sm" 
-                    className="flex-1"
-                    asChild
+                    className="w-full bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90"
+                    size="lg"
                   >
-                    <Link to="/rooms">View Details</Link>
+                    Choose {pkg.name}
                   </Button>
-                  <Button 
-                    variant="default" 
-                    size="sm" 
-                    className="flex-1"
-                    asChild
-                  >
-                    <Link to="/rooms">Reserve</Link>
-                  </Button>
-                </div>
+                </ContactDialog>
               </CardContent>
             </Card>
           ))}
         </div>
 
         <div className="text-center">
-          <Button variant="default" size="lg" asChild>
-            <Link to="/rooms">View All Rooms & Rates</Link>
-          </Button>
+          <ContactDialog variant="booking">
+            <Button variant="outline" size="lg" className="glass-card">
+              Have Questions? Contact Us
+            </Button>
+          </ContactDialog>
         </div>
       </div>
     </section>

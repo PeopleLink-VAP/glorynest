@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Phone, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import ContactDialog from "./ContactDialog";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -51,15 +52,17 @@ const Navigation = () => {
 
           {/* CTA Buttons */}
           <div className="hidden lg:flex items-center space-x-4">
-            <Button variant="outline" size="sm" asChild>
-              <Link to="/contact">
+            <ContactDialog variant="contact">
+              <Button variant="outline" size="sm">
                 <Phone className="w-4 h-4 mr-2" />
                 WhatsApp
-              </Link>
-            </Button>
-            <Button variant="default" size="sm" asChild>
-              <Link to="/rooms">Book Your Nest</Link>
-            </Button>
+              </Button>
+            </ContactDialog>
+            <ContactDialog variant="booking">
+              <Button variant="default" size="sm" className="bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90">
+                Book Villa
+              </Button>
+            </ContactDialog>
           </div>
 
           {/* Mobile Menu Button */}
@@ -88,15 +91,17 @@ const Navigation = () => {
                 </Link>
               ))}
               <div className="pt-4 space-y-3">
-                <Button variant="outline" size="sm" className="w-full" asChild>
-                  <Link to="/contact">
+                <ContactDialog variant="contact">
+                  <Button variant="outline" size="sm" className="w-full">
                     <Phone className="w-4 h-4 mr-2" />
                     WhatsApp
-                  </Link>
-                </Button>
-                <Button variant="default" size="sm" className="w-full" asChild>
-                  <Link to="/rooms">Book Your Nest</Link>
-                </Button>
+                  </Button>
+                </ContactDialog>
+                <ContactDialog variant="booking">
+                  <Button variant="default" size="sm" className="w-full bg-gradient-to-r from-primary to-secondary">
+                    Book Villa
+                  </Button>
+                </ContactDialog>
               </div>
             </div>
           </div>
