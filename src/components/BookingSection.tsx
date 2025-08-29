@@ -21,10 +21,10 @@ const BookingSection = () => {
               <Sparkles className="w-5 h-5 text-primary" />
               <span className="text-sm font-medium">Ready to Experience Glory Nest?</span>
             </div>
-            <h2 className="font-serif text-3xl md:text-5xl font-semibold text-foreground mb-6">
+            <h2 className="font-display text-4xl md:text-6xl font-normal text-foreground mb-6">
               Book Your Private Villa Sanctuary
             </h2>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+            <p className="font-sans text-lg text-muted-foreground max-w-3xl mx-auto">
               Complete privacy in our 2-bedroom villa with kitchen, pool, and living space. 
               Perfect for families seeking authentic experiences or couples on romantic getaways.
             </p>
@@ -36,24 +36,24 @@ const BookingSection = () => {
               <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-smooth">
                 <Home className="w-8 h-8 text-primary" />
               </div>
-              <h3 className="font-semibold text-lg text-foreground mb-2">Entire Private Villa</h3>
-              <p className="text-muted-foreground text-sm">2 bedrooms, full kitchen, living room & private pool</p>
+              <h3 className="font-sans text-lg font-semibold text-foreground mb-2">Entire Private Villa</h3>
+              <p className="font-sans text-muted-foreground text-sm">2 bedrooms, full kitchen, living room & private pool</p>
             </div>
             
             <div className="glass-card p-6 text-center group hover:scale-105 transition-all duration-300 animate-fade-up" style={{animationDelay: '0.1s'}}>
               <div className="w-16 h-16 bg-secondary/10 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:bg-secondary/20 transition-smooth">
                 <Users className="w-8 h-8 text-secondary" />
               </div>
-              <h3 className="font-semibold text-lg text-foreground mb-2">Perfect for Families</h3>
-              <p className="text-muted-foreground text-sm">Up to 6 guests, kid-friendly amenities included</p>
+              <h3 className="font-sans text-lg font-semibold text-foreground mb-2">Perfect for Families</h3>
+              <p className="font-sans text-muted-foreground text-sm">Up to 6 guests, kid-friendly amenities included</p>
             </div>
             
             <div className="glass-card p-6 text-center group hover:scale-105 transition-all duration-300 animate-fade-up" style={{animationDelay: '0.2s'}}>
               <div className="w-16 h-16 bg-accent/10 rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:bg-accent/20 transition-smooth">
                 <Calendar className="w-8 h-8 text-accent" />
               </div>
-              <h3 className="font-semibold text-lg text-foreground mb-2">3.5M VND/Night</h3>
-              <p className="text-muted-foreground text-sm">Includes breakfast, pool access & E-Fund contribution</p>
+              <h3 className="font-sans text-lg font-semibold text-foreground mb-2">3.5M VND/Night</h3>
+              <p className="font-sans text-muted-foreground text-sm">Includes breakfast, pool access & E-Fund contribution</p>
             </div>
           </div>
 
@@ -64,10 +64,10 @@ const BookingSection = () => {
                 <img src={sparrowIcon} alt="" className="w-8 h-8" />
               </div>
               
-              <h3 className="font-serif text-2xl font-semibold text-foreground mb-4">
+              <h3 className="font-display text-3xl font-normal text-foreground mb-4">
                 Ready to Come Home to Glory Nest?
               </h3>
-              <p className="text-muted-foreground mb-6">
+              <p className="font-sans text-muted-foreground mb-6">
                 Tell us about your dates and family size. We'll create a personalized experience 
                 that feels like visiting dear friends in Vietnam.
               </p>
@@ -95,7 +95,7 @@ const BookingSection = () => {
               </div>
             </div>
             
-            <p className="text-sm text-muted-foreground">
+            <p className="font-sans text-sm text-muted-foreground">
               🌿 Every stay supports local education through our E-Fund initiative
             </p>
           </div>

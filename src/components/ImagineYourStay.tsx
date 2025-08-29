@@ -45,10 +45,10 @@ const ImagineYourStay = () => {
             <Sparkles className="w-5 h-5 text-primary" />
             <span className="text-sm font-medium">Your Day at Glory Nest</span>
           </div>
-          <h2 className="font-serif text-3xl md:text-5xl font-semibold text-foreground mb-6">
+          <h2 className="font-display text-4xl md:text-6xl font-normal text-foreground mb-6">
             Live Like Family, Not a Tourist
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="font-sans text-lg text-muted-foreground max-w-2xl mx-auto">
             Experience authentic Vietnamese family life in your private villa sanctuary. 
             Every moment unfolds naturally, like visiting dear friends.
           </p>
@@ -70,13 +70,13 @@ const ImagineYourStay = () => {
                       <moment.icon className="w-7 h-7 text-primary" />
                     </div>
                     <div>
-                      <span className="text-sm text-primary font-medium uppercase tracking-wide">{moment.time}</span>
-                      <h3 className="font-serif text-2xl font-semibold text-foreground">
+                      <span className="font-sans text-sm text-primary font-medium uppercase tracking-wide">{moment.time}</span>
+                      <h3 className="font-sans text-2xl font-semibold text-foreground">
                         {moment.title}
                       </h3>
                     </div>
                   </div>
-                  <p className="text-muted-foreground leading-relaxed text-lg">
+                  <p className="font-sans text-muted-foreground leading-relaxed text-lg">
                     {moment.description}
                   </p>
                   
@@ -101,7 +101,7 @@ const ImagineYourStay = () => {
         </div>
 
         <div className="text-center glass-card p-8 max-w-2xl mx-auto animate-fade-up mt-20">
-          <h3 className="font-serif text-2xl font-semibold text-foreground mb-4">
+          <h3 className="font-display text-3xl font-normal text-foreground mb-4">
             Glory Nest in Three Words
           </h3>
           <div className="flex justify-center space-x-8 text-lg">

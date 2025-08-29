@@ -24,15 +24,10 @@ const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-3">
-            <img 
-              src="/lovable-uploads/efa80ed4-4282-4a43-bc0e-3ecceae9ed54.png" 
-              alt="Glory Nest Logo" 
-              className="h-12 w-12"
-            />
-            <span className="font-serif text-2xl font-semibold text-foreground">
+          <Link to="/" className="flex items-center space-x-3 group">
+            <div className="font-display text-3xl text-primary group-hover:scale-105 transition-transform duration-300">
               Glory Nest
-            </span>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}
@@ -41,8 +36,8 @@ const Navigation = () => {
               <Link
                 key={item.href}
                 to={item.href}
-                className={`transition-smooth hover:text-primary ${
-                  isActive(item.href) ? "text-primary font-medium" : "text-foreground"
+                className={`font-sans text-sm font-medium transition-smooth hover:text-primary ${
+                  isActive(item.href) ? "text-primary" : "text-foreground"
                 }`}
               >
                 {item.label}
@@ -83,8 +78,8 @@ const Navigation = () => {
                   key={item.href}
                   to={item.href}
                   onClick={() => setIsOpen(false)}
-                  className={`py-2 transition-smooth hover:text-primary ${
-                    isActive(item.href) ? "text-primary font-medium" : "text-foreground"
+                  className={`py-2 font-sans text-sm font-medium transition-smooth hover:text-primary ${
+                    isActive(item.href) ? "text-primary" : "text-foreground"
                   }`}
                 >
                   {item.label}

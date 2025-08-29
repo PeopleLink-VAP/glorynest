@@ -41,10 +41,10 @@ const WhyGloryNest = () => {
             <Sparkles className="w-5 h-5 text-primary" />
             <span className="text-sm font-medium">What Makes Us Special</span>
           </div>
-          <h2 className="font-serif text-3xl md:text-5xl font-semibold text-foreground mb-6">
+          <h2 className="font-display text-4xl md:text-6xl font-normal text-foreground mb-6">
             Why Glory Nest Feels Like Home
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="font-sans text-lg text-muted-foreground max-w-2xl mx-auto">
             More than just a place to stay – we're a family home where every guest 
             becomes part of our story, every meal shared creates memories.
           </p>
@@ -63,10 +63,10 @@ const WhyGloryNest = () => {
                     <feature.icon className="w-7 h-7 text-primary" />
                   </div>
                   <div className="flex-1">
-                    <h3 className="font-semibold text-xl text-foreground mb-3">
+                    <h3 className="font-sans text-xl font-semibold text-foreground mb-3">
                       {feature.title}
                     </h3>
-                    <p className="text-muted-foreground leading-relaxed">
+                    <p className="font-sans text-muted-foreground leading-relaxed">
                       {feature.description}
                     </p>
                   </div>

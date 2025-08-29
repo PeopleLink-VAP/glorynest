@@ -42,19 +42,16 @@ const HeroSection = () => {
 
           {/* Creative Headline */}
           <div className="space-y-6">
-            <h1 className="font-serif text-6xl md:text-8xl lg:text-9xl font-bold text-white leading-tight tracking-tight">
-              Glory
-              <span className="block bg-gradient-to-r from-secondary via-accent to-primary bg-clip-text text-transparent animate-float">
-                Nest
-              </span>
+            <h1 className="font-display text-6xl md:text-8xl lg:text-9xl font-normal text-white leading-tight tracking-wide">
+              Glory Nest
             </h1>
-            <p className="text-2xl md:text-3xl lg:text-4xl font-light text-white leading-relaxed">
+            <p className="font-sans text-2xl md:text-3xl lg:text-4xl font-light text-white leading-relaxed">
               Your Private Villa Sanctuary in Hoi An
             </p>
           </div>
 
           {/* Compelling Subline */}
-          <p className="text-lg md:text-xl text-white/80 max-w-3xl mx-auto leading-relaxed font-medium">
+          <p className="font-sans text-lg md:text-xl text-white/80 max-w-3xl mx-auto leading-relaxed">
             Entire private villa with 2 bedrooms, full kitchen, pool & living space. 
             <br className="hidden md:block" />
             Perfect for families with kids or romantic honeymoon getaways!
