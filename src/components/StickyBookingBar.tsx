@@ -39,7 +39,7 @@ const StickyBookingBar = () => {
                   {t('hero.title')}
                 </h3>
                 <p className="text-sm text-muted-foreground hidden sm:block">
-                  Private 4-bedroom villa • Pool • Full kitchen
+                  Private 2-bedroom villa • Pool • Full kitchen
                 </p>
               </div>
             </div>

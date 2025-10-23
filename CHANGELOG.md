@@ -1,7 +1,7 @@
 # Glory Nest Website Redesign - Changelog
 
 ## Overview
-Complete rebrand and repositioning from guesthouse to private 4-bedroom villa with terracotta theme, bird nest motifs, and enhanced E-Fund messaging.
+Complete rebrand and repositioning from guesthouse to private 2-bedroom villa with terracotta theme, bird nest motifs, and enhanced E-Fund messaging.
 
 ---
 
@@ -98,7 +98,7 @@ Updated `src/i18n/locales/en.json` with new copy:
 
 ### 7. **SEO & Meta Tags** ✓
 Updated `index.html`:
-- **Title**: "Glory Nest (Chim Bay Bay) - Private 4-Bedroom Villa in Hoi An"
+- **Title**: "Glory Nest (Chim Bay Bay) - Private 2-bedroom Villa in Hoi An"
 - **Description**: Mentions 4 bedrooms, private pool, 3 generations, E-Fund
 - **Keywords**: Private villa, 4 bedroom, social impact, Ancient Town
 - **OG tags**: Updated images to use room photos
@@ -166,7 +166,7 @@ Accent: hsl(35 40% 65%)       /* Soft Sand */
 ## 🔄 Content Strategy Changes
 
 ### From → To
-- **Guesthouse** → **Private 4-bedroom villa**
+- **Guesthouse** → **Private 2-bedroom villa**
 - **2 bedrooms** → **4 bedrooms + 8-10 guests**
 - **"Book a room"** → **"Book the entire villa"**
 - **Holiday orange** → **Warm terracotta**
