@@ -133,11 +133,13 @@ const EFund = () => {
               </div>
 
               <div className="text-center">
-                <ContactDialog variant="booking">
-                  <Button size="lg" className="h-14 px-8 bg-primary hover:bg-primary/90 text-primary-foreground font-bold shadow-lg border-0 transition-all duration-300 hover:scale-105">
-                    {t('efund.cta')}
-                  </Button>
-                </ContactDialog>
+                <Button 
+                  size="lg" 
+                  className="h-14 px-8 bg-primary hover:bg-primary/90 text-primary-foreground font-bold shadow-lg border-0 transition-all duration-300 hover:scale-105"
+                  onClick={() => window.open('https://cal.com/glorynest', '_blank')}
+                >
+                  {t('efund.cta')}
+                </Button>
               </div>
             </div>
           </div>

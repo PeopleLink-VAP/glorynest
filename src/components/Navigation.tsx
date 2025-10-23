@@ -60,11 +60,14 @@ const Navigation = () => {
                 WhatsApp
               </Button>
             </ContactDialog>
-            <ContactDialog variant="booking">
-              <Button variant="default" size="sm" className="bg-primary hover:bg-primary/90 text-primary-foreground">
-                {t('booking.reserve')}
-              </Button>
-            </ContactDialog>
+            <Button 
+              variant="default" 
+              size="sm" 
+              className="bg-primary hover:bg-primary/90 text-primary-foreground"
+              onClick={() => window.open('https://cal.com/glorynest', '_blank')}
+            >
+              {t('booking.reserve')}
+            </Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -100,11 +103,14 @@ const Navigation = () => {
                     WhatsApp
                   </Button>
                 </ContactDialog>
-                <ContactDialog variant="booking">
-                  <Button variant="default" size="sm" className="w-full bg-primary text-primary-foreground">
-                    {t('booking.reserve')}
-                  </Button>
-                </ContactDialog>
+                <Button 
+                  variant="default" 
+                  size="sm" 
+                  className="w-full bg-primary text-primary-foreground"
+                  onClick={() => window.open('https://cal.com/glorynest', '_blank')}
+                >
+                  {t('booking.reserve')}
+                </Button>
               </div>
             </div>
           </div>

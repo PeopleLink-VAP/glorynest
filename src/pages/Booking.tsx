@@ -215,15 +215,13 @@ const Booking = () => {
                   </div>
 
                   {/* Book Button */}
-                  <ContactDialog variant="booking">
-                    <Button
-                      className="w-full h-16 text-lg font-bold bg-primary hover:bg-primary/90 shadow-xl text-primary-foreground border-0 transition-all duration-300 hover:scale-105"
-                      disabled={!selectedDates.checkin || !selectedDates.checkout || calculateNights() === 0}
-                    >
-                      <CalendarIcon className="w-6 h-6 mr-3" />
-                      Request Booking
-                    </Button>
-                  </ContactDialog>
+                  <Button
+                    className="w-full h-16 text-lg font-bold bg-primary hover:bg-primary/90 shadow-xl text-primary-foreground border-0 transition-all duration-300 hover:scale-105"
+                    onClick={() => window.open('https://cal.com/glorynest', '_blank')}
+                  >
+                    <CalendarIcon className="w-6 h-6 mr-3" />
+                    Book on Cal.com
+                  </Button>
                 </CardContent>
               </Card>
             </div>

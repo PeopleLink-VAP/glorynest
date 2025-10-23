@@ -75,15 +75,14 @@ const BookingSection = () => {
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <ContactDialog variant="booking">
-                  <Button 
-                    size="lg" 
-                    className="min-w-48 h-16 text-lg font-bold bg-primary hover:bg-primary/90 shadow-xl text-primary-foreground border-0"
-                  >
-                    <Calendar className="w-6 h-6 mr-3" />
-                    Book Now
-                  </Button>
-                </ContactDialog>
+                <Button 
+                  size="lg" 
+                  className="min-w-48 h-16 text-lg font-bold bg-primary hover:bg-primary/90 shadow-xl text-primary-foreground border-0"
+                  onClick={() => window.open('https://cal.com/glorynest', '_blank')}
+                >
+                  <Calendar className="w-6 h-6 mr-3" />
+                  Book Now
+                </Button>
                 
                 <ContactDialog variant="contact">
                   <Button 

@@ -78,11 +78,13 @@ const Rooms = () => {
                 <p className="text-xl text-white/90 mb-6">
                   {t('rooms.description')}
                 </p>
-                <ContactDialog variant="booking">
-                  <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-xl">
-                    {t('rooms.cta')}
-                  </Button>
-                </ContactDialog>
+                <Button 
+                  size="lg" 
+                  className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-xl"
+                  onClick={() => window.open('https://cal.com/glorynest', '_blank')}
+                >
+                  {t('rooms.cta')}
+                </Button>
               </div>
             </div>
           </div>
@@ -184,11 +186,13 @@ const Rooms = () => {
                 </div>
               </div>
 
-              <ContactDialog variant="booking">
-                <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-xl">
-                  {t('rooms.cta')}
-                </Button>
-              </ContactDialog>
+              <Button 
+                size="lg" 
+                className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-xl"
+                onClick={() => window.open('https://cal.com/glorynest', '_blank')}
+              >
+                {t('rooms.cta')}
+              </Button>
             </div>
           </div>
         </section>

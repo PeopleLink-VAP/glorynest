@@ -128,13 +128,17 @@ Updated `index.html`:
 ### Modified Files:
 1. `/src/index.css` - Terracotta color theme
 2. `/src/components/Navigation.tsx` - Logo and menu updates
-3. `/src/pages/Index.tsx` - Added components
-4. `/src/pages/Story.tsx` - Updated copy, added sticky bar
-5. `/src/pages/EFund.tsx` - Updated copy, added sticky bar
-6. `/src/i18n/locales/en.json` - Complete translation update
-7. `/src/App.tsx` - Added /rooms route
-8. `/index.html` - SEO meta tags
-9. `/tailwind.config.ts` - No changes needed
+3. `/src/components/Footer.tsx` - Updated to terracotta submark logo
+4. `/src/pages/Index.tsx` - Added components
+5. `/src/pages/Story.tsx` - Updated copy, added sticky bar
+6. `/src/pages/EFund.tsx` - Updated copy, added sticky bar
+7. `/src/i18n/locales/en.json` - Complete translation update
+8. `/src/App.tsx` - Added /rooms route
+9. `/index.html` - SEO meta tags
+10. `/tailwind.config.ts` - No changes needed
+
+### Deleted Files:
+1. `/public/lovable-uploads/` - Old logo directory removed
 
 ---
 

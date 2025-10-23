@@ -62,15 +62,14 @@ const StickyBookingBar = () => {
                   Ask a Question
                 </Button>
               </ContactDialog>
-              <ContactDialog variant="booking">
-                <Button 
-                  size="lg" 
-                  className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg"
-                >
-                  <Calendar className="w-5 h-5 mr-2" />
-                  {t('booking.reserve')}
-                </Button>
-              </ContactDialog>
+              <Button 
+                size="lg" 
+                className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg"
+                onClick={() => window.open('https://cal.com/glorynest', '_blank')}
+              >
+                <Calendar className="w-5 h-5 mr-2" />
+                {t('booking.reserve')}
+              </Button>
             </div>
           </div>
         </div>

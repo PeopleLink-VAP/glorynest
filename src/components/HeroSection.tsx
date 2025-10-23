@@ -48,15 +48,14 @@ const HeroSection = () => {
 
           {/* CTA Button */}
           <div className="flex justify-center">
-            <ContactDialog variant="booking">
-              <Button 
+            <Button 
               size="lg" 
               className="min-w-72 h-20 text-xl font-semibold bg-primary hover:bg-primary/90 shadow-xl text-black border-0"
-              >
-                <Calendar className="w-6 h-6 mr-3" />
-                {t('hero.bookNow')}
-              </Button>
-            </ContactDialog>
+              onClick={() => window.open('https://cal.com/glorynest', '_blank')}
+            >
+              <Calendar className="w-6 h-6 mr-3" />
+              {t('hero.bookNow')}
+            </Button>
           </div>
 
           {/* Quick Highlights */}
