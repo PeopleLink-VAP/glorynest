@@ -14,7 +14,7 @@ const Footer = () => {
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
               <img 
-                src="/lovable-uploads/efa80ed4-4282-4a43-bc0e-3ecceae9ed54.png" 
+                src="/logo/PNG/glorynest_submark_terracotta.png" 
                 alt="Glory Nest Logo" 
                 className="h-10 w-10"
               />

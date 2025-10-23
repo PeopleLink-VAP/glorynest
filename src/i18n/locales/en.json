@@ -1,7 +1,8 @@
 {
   "navigation": {
     "home": "Home",
-    "story": "Our Story",
+    "story": "About",
+    "rooms": "The Villa",
     "booking": "Booking",
     "contact": "Contact",
     "faq": "FAQ",
@@ -9,17 +10,18 @@
     "efund": "E-Fund"
   },
   "hero": {
-    "title": "Welcome to Glory Nest",
-    "subtitle": "Your Private Villa Sanctuary in Hoi An",
-    "description": "Entire private villa with 2 bedrooms, full kitchen, pool & living space. Perfect for families with kids or romantic honeymoon getaways!",
-    "bookNow": "Book Your Private Villa",
-    "learnMore": "Learn More",
-    "specialBadge": "Entire Private Villa • Family & Honeymoon Packages",
+    "title": "Your Nest Awaits",
+    "subtitle": "A Private Villa Where Family & Legacy Live",
+    "description": "Whole-house villa with 4 bedrooms, private pool, full kitchen & living spaces. Built by generations, shared with heart.",
+    "bookNow": "Book Your Stay",
+    "learnMore": "Discover Our Story",
+    "specialBadge": "Private 4-Bedroom Villa • Family Legacy • Social Impact",
     "pricePerNight": "per night",
-    "efundLabel": "E-Fund",
-    "impactStay": "Impact Stay",
-    "walkTo": "Walk to",
-    "oldTown": "Old Town"
+    "efundLabel": "Social Impact",
+    "impactStay": "Stay with Purpose",
+    "walkTo": "5 min to",
+    "oldTown": "Ancient Town",
+    "cta": "Get in touch — your Hoi An escape begins here."
   },
   "booking": {
     "title": "Book Your Stay",
@@ -31,22 +33,84 @@
     "reserve": "Reserve Now"
   },
   "contact": {
-    "title": "Contact Us",
-    "name": "Name",
-    "email": "Email",
-    "message": "Message",
+    "title": "Let's Talk",
+    "subtitle": "Get in touch — your Hoi An escape begins here.",
+    "description": "Whether you're planning your trip, have a special request, or just want to say hi—we'd love to hear from you.",
+    "name": "Your Name",
+    "email": "Email Address",
+    "message": "Tell us about your travel plans...",
     "send": "Send Message",
     "phone": "Phone",
-    "address": "Address"
+    "whatsapp": "WhatsApp Us",
+    "email_label": "Email",
+    "address": "Location",
+    "addressValue": "Hoi An, Quang Nam, Vietnam",
+    "responseTime": "We typically respond within 24 hours.",
+    "cta": "Ready to book? Let us know your dates and we'll take it from there."
   },
   "story": {
-    "title": "Our Story",
-    "subtitle": "Discover the heart behind Glory Nest",
-    "description": "Learn about our journey and what makes us special"
+    "title": "The Nest Behind the Name",
+    "subtitle": "Three generations, one family home.",
+    "description": "Glory Nest isn't just a villa—it's woven from the dreams of a grandmother, built by a father, and nurtured by a son. Every corner whispers stories of roots, resilience, and the simple joy of welcoming others home.",
+    "roots": {
+      "title": "Where It All Began",
+      "content": "It started with Grandmother—a woman who dreamed big despite having little. Her vision for a family gathering place became the seed for what Glory Nest is today."
+    },
+    "generations": {
+      "title": "Built with Love, Brick by Brick",
+      "content": "Father took that dream and made it real. Through years of careful planning and hard work, he transformed the vision into walls, rooms, and a courtyard that became the heart of family life."
+    },
+    "today": {
+      "title": "A Nest for You",
+      "content": "Now, the son opens these doors to travelers like you. Glory Nest is more than accommodation—it's an invitation to be part of our extended family, even if just for a few nights."
+    },
+    "giving": {
+      "title": "Giving Back",
+      "content": "Because we've been blessed, we believe in passing it forward. Every stay contributes to our E-Fund, supporting local families with education and emergency needs."
+    },
+    "cta": "Be Part of Our Story – Book Your Stay"
+  },
+  "efund": {
+    "title": "E-Fund: Stay With Purpose",
+    "subtitle": "At Glory Nest, staying here means giving back.",
+    "description": "A portion of every booking goes directly to our E-Fund—a community chest supporting local families in Hoi An with children's education and emergency aid.",
+    "impact": {
+      "title": "Where Your Stay Makes an Impact",
+      "education": "Children's Education",
+      "educationDesc": "School supplies, uniforms, and tutoring for kids who need it most",
+      "emergency": "Emergency Relief",
+      "emergencyDesc": "Quick help for families facing unexpected hardships",
+      "community": "Community Support",
+      "communityDesc": "Building a safety net for our neighbors"
+    },
+    "mission": "We've been blessed with this home and this opportunity. The E-Fund is our way of making sure that blessing ripples outward.",
+    "cta": "Stay With Purpose",
+    "impactNote": "Every night you stay contributes to real change in real lives."
   },
   "faq": {
-    "title": "Frequently Asked Questions",
-    "subtitle": "Find answers to common questions"
+    "title": "Questions? We've Got Answers.",
+    "subtitle": "Everything you need to know before booking",
+    "location": {
+      "q": "Where exactly is Glory Nest?",
+      "a": "We're tucked in a quiet residential area, about 5 minutes by bike to Hoi An Ancient Town and 10 minutes to An Bang Beach. Close enough to explore, far enough to rest."
+    },
+    "family": {
+      "q": "Is Glory Nest good for families with young kids?",
+      "a": "Absolutely! The villa is spacious, the pool is perfect for splashing, and we can help arrange cribs, high chairs, or babysitting if needed."
+    },
+    "honeymoon": {
+      "q": "Can you arrange something special for honeymooners?",
+      "a": "Yes! Let us know in advance and we'll set up a romantic welcome—think fresh flowers, local wine, and a private dinner setup."
+    },
+    "food": {
+      "q": "Do you provide meals?",
+      "a": "We don't offer full meal service, but we can arrange a private chef, recommend nearby restaurants, or point you to the best street food spots."
+    },
+    "booking": {
+      "q": "What's your cancellation policy?",
+      "a": "We offer flexible cancellation up to 7 days before check-in for a full refund. Within 7 days, 50% refund. Life happens—we get it."
+    },
+    "cta": "Still have questions? Message us directly—we're here to help."
   },
   "testimonials": {
     "title": "What Our Guests Say",
@@ -57,13 +121,49 @@
     "subtitle": "Find us in the heart of the city"
   },
   "rooms": {
-    "title": "Our Rooms",
-    "subtitle": "Comfortable accommodations for every need",
-    "viewAll": "View All Rooms"
+    "title": "The Villa",
+    "subtitle": "Your private sanctuary in Hoi An",
+    "description": "Glorynest is a private 4-bedroom villa designed for families, groups, or couples seeking space, comfort, and authentic Vietnamese hospitality. Rent the entire home and make it yours.",
+    "overview": {
+      "title": "What You Get",
+      "bedrooms": "4 Spacious Bedrooms",
+      "bedroomsDesc": "Sleep up to 8-10 guests comfortably",
+      "pool": "Private Pool",
+      "poolDesc": "Your own oasis for morning dips or sunset swims",
+      "kitchen": "Full Kitchen",
+      "kitchenDesc": "Cook your own meals or hire a local chef",
+      "outdoor": "Outdoor Dining & Courtyard",
+      "outdoorDesc": "Perfect for family meals under the stars",
+      "location": "5 Minutes to Ancient Town",
+      "locationDesc": "10 minutes to the beach. Best of both worlds."
+    },
+    "layout": {
+      "title": "Villa Layout",
+      "master": "Master Bedroom",
+      "bedrooms": "3 Additional Bedrooms",
+      "bathrooms": "2 Modern Bathrooms",
+      "living": "Spacious Living Room",
+      "kitchen": "Fully Equipped Kitchen",
+      "courtyard": "Private Courtyard",
+      "pool": "Swimming Pool"
+    },
+    "cta": "Book the Entire Villa"
+  },
+  "journal": {
+    "title": "The Nest Notes",
+    "subtitle": "Stories, tips, and love letters to Hoi An",
+    "description": "Dive into our journal for hidden gems, local insights, and the stories behind the places we love.",
+    "readMore": "Read More",
+    "categories": {
+      "local": "Local Guides",
+      "stories": "Guest Stories",
+      "culture": "Culture & Heritage",
+      "food": "Food & Drink"
+    }
   },
   "footer": {
-    "description": "A boutique villa where comfort meets connection – steps from Ancient Town, moments from the beach.",
-    "efundSupport": "Supporting local families through our E-Fund",
+    "description": "A family-built villa where generations meet, and every stay helps give back to the community.",
+    "efundSupport": "Every booking supports local families through our E-Fund",
     "quickLinks": "Quick Links",
     "bookNow": "Book Now",
     "ourStory": "Our Story",

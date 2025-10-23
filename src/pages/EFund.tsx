@@ -1,26 +1,37 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import { Link } from "react-router-dom";
+import StickyBookingBar from "@/components/StickyBookingBar";
+import { useTranslation } from "react-i18next";
+import ContactDialog from "@/components/ContactDialog";
 import { Button } from "@/components/ui/button";
-import { Heart, GraduationCap, Users, HandHeart } from "lucide-react";
+import { Heart, GraduationCap, Users, HandHeart, AlertCircle } from "lucide-react";
 
 const EFund = () => {
+  const { t } = useTranslation();
+  
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
+      <StickyBookingBar />
       <main className="pt-20">
         {/* Hero Section */}
-        <section className="py-20 bg-secondary/20">
+        <section className="py-20 bg-primary/5 relative overflow-hidden">
+          <div className="absolute bottom-10 left-10 opacity-20">
+            <img src="/logo/PNG/glorynest_submark_terracotta.png" alt="" className="w-16 h-16 animate-float" />
+          </div>
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center animate-fade-up">
               <div className="w-20 h-20 bg-primary/10 rounded-2xl flex items-center justify-center mx-auto mb-8">
-                <Heart className="w-10 h-10 text-primary" />
+                <Heart className="w-10 h-10 text-primary fill-primary" />
               </div>
               <h1 className="font-serif text-4xl md:text-6xl font-semibold text-foreground mb-6">
-                The E-Fund Initiative
+                {t('efund.title')}
               </h1>
-              <p className="text-xl text-primary font-medium">
-                At Glory Nest, staying here means giving back
+              <p className="text-xl text-primary font-medium mb-4">
+                {t('efund.subtitle')}
+              </p>
+              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                {t('efund.description')}
               </p>
             </div>
           </div>
@@ -32,57 +43,57 @@ const EFund = () => {
             <div className="max-w-4xl mx-auto">
               <div className="text-center mb-16">
                 <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
-                  Where Your Stay Makes a Difference
+                  {t('efund.impact.title')}
                 </h2>
                 <p className="text-lg text-muted-foreground">
-                  A portion of every booking goes directly to supporting local families and children in Quang Nam province.
+                  {t('efund.impactNote')}
                 </p>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
                 <div className="glass-card p-8 animate-fade-up">
                   <div className="flex items-center space-x-4 mb-6">
                     <GraduationCap className="w-12 h-12 text-primary" />
-                    <h3 className="font-serif text-2xl font-semibold text-foreground">
-                      Children's Education
+                    <h3 className="font-serif text-xl font-semibold text-foreground">
+                      {t('efund.impact.education')}
                     </h3>
                   </div>
-                  <ul className="space-y-3 text-muted-foreground">
-                    <li>• School supplies and uniforms for children in need</li>
-                    <li>• Educational materials and books for local schools</li>
-                    <li>• Scholarship support for continuing education</li>
-                    <li>• After-school programs and tutoring assistance</li>
-                  </ul>
+                  <p className="text-muted-foreground">
+                    {t('efund.impact.educationDesc')}
+                  </p>
+                </div>
+
+                <div className="glass-card p-8 animate-fade-up" style={{ animationDelay: '0.1s' }}>
+                  <div className="flex items-center space-x-4 mb-6">
+                    <AlertCircle className="w-12 h-12 text-primary" />
+                    <h3 className="font-serif text-xl font-semibold text-foreground">
+                      {t('efund.impact.emergency')}
+                    </h3>
+                  </div>
+                  <p className="text-muted-foreground">
+                    {t('efund.impact.emergencyDesc')}
+                  </p>
                 </div>
 
                 <div className="glass-card p-8 animate-fade-up" style={{ animationDelay: '0.2s' }}>
                   <div className="flex items-center space-x-4 mb-6">
                     <Users className="w-12 h-12 text-primary" />
-                    <h3 className="font-serif text-2xl font-semibold text-foreground">
-                      Family Support
+                    <h3 className="font-serif text-xl font-semibold text-foreground">
+                      {t('efund.impact.community')}
                     </h3>
                   </div>
-                  <ul className="space-y-3 text-muted-foreground">
-                    <li>• Emergency assistance for single mothers</li>
-                    <li>• Healthcare support for families in crisis</li>
-                    <li>• Job training and skill development programs</li>
-                    <li>• Community building and support networks</li>
-                  </ul>
+                  <p className="text-muted-foreground">
+                    {t('efund.impact.communityDesc')}
+                  </p>
                 </div>
               </div>
 
               {/* Personal Note */}
-              <div className="glass-card p-12 text-center mb-16 animate-fade-up" style={{ animationDelay: '0.4s' }}>
+              <div className="glass-card p-12 text-center mb-16 animate-fade-up" style={{ animationDelay: '0.3s' }}>
                 <HandHeart className="w-16 h-16 text-primary mx-auto mb-6" />
-                <h3 className="font-serif text-2xl font-semibold text-foreground mb-6">
-                  A Personal Note from Trinh
-                </h3>
-                <blockquote className="text-lg text-muted-foreground leading-relaxed italic mb-6">
-                  "As a single mom, I know how vital community support is. There were times when a helping hand 
-                  made all the difference for Aaliyah and me. Glory Nest is our way to care for others while 
-                  welcoming you into our home. Every booking makes a real difference in someone's life."
+                <blockquote className="text-xl text-muted-foreground leading-relaxed italic">
+                  "{t('efund.mission')}"
                 </blockquote>
-                <p className="text-primary font-medium">— Trinh, Founder & Host</p>
               </div>
 
               {/* How It Works */}
@@ -122,9 +133,11 @@ const EFund = () => {
               </div>
 
               <div className="text-center">
-                <Button size="lg" className="h-14 px-8 bg-primary hover:bg-primary/90 text-primary-foreground font-bold shadow-lg border-0 transition-all duration-300 hover:scale-105" asChild>
-                    <Link to="/booking">Stay With Purpose – Book Now</Link>
+                <ContactDialog variant="booking">
+                  <Button size="lg" className="h-14 px-8 bg-primary hover:bg-primary/90 text-primary-foreground font-bold shadow-lg border-0 transition-all duration-300 hover:scale-105">
+                    {t('efund.cta')}
                   </Button>
+                </ContactDialog>
               </div>
             </div>
           </div>

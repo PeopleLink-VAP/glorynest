@@ -14,6 +14,7 @@ const Navigation = () => {
   const mainNavItems = [
     { href: "/", label: t('navigation.home') },
     { href: "/story", label: t('navigation.story') },
+    { href: "/rooms", label: t('navigation.rooms') },
     { href: "/booking", label: t('navigation.booking') },
     { href: "/efund", label: t('navigation.efund') },
     { href: "/journal", label: t('navigation.journal') },
@@ -28,9 +29,11 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-3 group">
-            <div className="font-display text-3xl text-black group-hover:scale-105 transition-transform duration-300">
-              Glory Nest
-            </div>
+            <img 
+              src="/logo/PNG/glorynest_fulllogo_terracotta.png" 
+              alt="Glory Nest" 
+              className="h-12 w-auto group-hover:scale-105 transition-transform duration-300"
+            />
           </Link>
 
           {/* Desktop Navigation */}

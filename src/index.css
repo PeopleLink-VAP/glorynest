@@ -6,48 +6,48 @@
 
 @layer base {
   :root {
-    /* Glory Nest Brand Colors */
-    --background: 33 22% 93%; /* Ivory White #F6F4F2 */
-    --foreground: 0 0% 17%; /* Charcoal Black #2C2C2C */
+    /* Glory Nest Brand Colors - Terracotta Theme */
+    --background: 30 18% 95%; /* Warm Smoky White #F5F2EE */
+    --foreground: 0 0% 15%; /* Deep Charcoal #262626 */
 
-    --card: 33 22% 93%;
-    --card-foreground: 0 0% 17%;
+    --card: 30 18% 95%;
+    --card-foreground: 0 0% 15%;
 
-    --popover: 33 22% 93%;
-    --popover-foreground: 0 0% 17%;
+    --popover: 30 18% 97%;
+    --popover-foreground: 0 0% 15%;
 
-    --primary: 25 85% 55%; /* Bright Holiday Orange */
-    --primary-foreground: 33 22% 93%;
+    --primary: 14 55% 60%; /* Terracotta #C57B57 */
+    --primary-foreground: 30 18% 97%;
 
-    --secondary: 45 95% 65%; /* Sunny Holiday Yellow */
-    --secondary-foreground: 0 0% 17%;
+    --secondary: 25 30% 45%; /* Warm Brown */
+    --secondary-foreground: 30 18% 97%;
 
-    --muted: 33 50% 90%;
-    --muted-foreground: 0 0% 40%;
+    --muted: 30 20% 88%;
+    --muted-foreground: 0 0% 35%;
 
-    --accent: 15 80% 70%; /* Bright Coral */
-    --accent-foreground: 0 0% 17%;
+    --accent: 35 40% 65%; /* Soft Sand */
+    --accent-foreground: 0 0% 15%;
 
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 33 22% 93%;
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 30 18% 97%;
 
-    --border: 33 39% 85%;
-    --input: 33 39% 85%;
+    --border: 30 25% 85%;
+    --input: 30 25% 85%;
     --ring: 14 55% 60%;
 
-    --radius: 1rem;
+    --radius: 0.75rem;
     
-    /* Glassmorphism Effects */
-    --glass-bg: 33 22% 93% / 0.85;
-    --glass-border: 25 85% 55% / 0.25;
-    --glass-shadow: 0 12px 40px 0 rgba(255, 138, 77, 0.2), 0 4px 16px 0 rgba(255, 138, 77, 0.1);
-    --glass-shadow-luxury: 0 20px 60px 0 rgba(255, 138, 77, 0.25), 0 8px 24px 0 rgba(255, 138, 77, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    /* Glassmorphism Effects - Terracotta */
+    --glass-bg: 30 18% 95% / 0.9;
+    --glass-border: 14 55% 60% / 0.2;
+    --glass-shadow: 0 8px 32px 0 rgba(197, 123, 87, 0.15), 0 2px 8px 0 rgba(197, 123, 87, 0.1);
+    --glass-shadow-luxury: 0 16px 48px 0 rgba(197, 123, 87, 0.2), 0 6px 20px 0 rgba(197, 123, 87, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.3);
     
-    /* Custom Gradients */
-    --gradient-warm: linear-gradient(135deg, hsl(25 85% 55%), hsl(45 95% 65%));
-    --gradient-soft: linear-gradient(180deg, hsl(33 22% 93%), hsl(45 95% 75%));
-    --gradient-hero: linear-gradient(135deg, hsl(25 85% 55% / 0.9), hsl(45 95% 65% / 0.8));
-    --gradient-nest: linear-gradient(45deg, hsl(15 80% 70%), hsl(25 85% 55%), hsl(45 95% 65%));
+    /* Custom Gradients - Warm Earth Tones */
+    --gradient-warm: linear-gradient(135deg, hsl(14 55% 60%), hsl(25 30% 45%));
+    --gradient-soft: linear-gradient(180deg, hsl(30 18% 95%), hsl(35 40% 85%));
+    --gradient-hero: linear-gradient(135deg, hsl(14 55% 60% / 0.95), hsl(25 30% 45% / 0.85));
+    --gradient-nest: linear-gradient(45deg, hsl(14 55% 60%), hsl(25 30% 45%), hsl(35 40% 65%));
     
     /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);

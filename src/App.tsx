@@ -8,7 +8,7 @@ import { I18nextProvider } from "react-i18next";
 import i18n from "./i18n";
 import Index from "./pages/Index";
 import Story from "./pages/Story";
-
+import Rooms from "./pages/Rooms";
 import Booking from "./pages/Booking";
 import EFund from "./pages/EFund";
 import Journal from "./pages/Journal";
@@ -41,7 +41,7 @@ const App = () => (
             <Routes>
               <Route path="/" element={<Index />} />
               <Route path="/story" element={<Story />} />
-      
+              <Route path="/rooms" element={<Rooms />} />
               <Route path="/booking" element={<Booking />} />
               <Route path="/efund" element={<EFund />} />
               <Route path="/journal" element={<Journal />} />

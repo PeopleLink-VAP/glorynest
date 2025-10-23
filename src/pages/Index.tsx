@@ -1,6 +1,8 @@
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import StickyBookingBar from "@/components/StickyBookingBar";
 import HeroSection from "@/components/HeroSection";
+import VillaGallery from "@/components/VillaGallery";
 import OurStoryTeaser from "@/components/OurStoryTeaser";
 import WhyGloryNest from "@/components/WhyGloryNest";
 import ImagineYourStay from "@/components/ImagineYourStay";
@@ -14,11 +16,12 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
+      <StickyBookingBar />
       <main>
         <HeroSection />
+        <VillaGallery />
         <OurStoryTeaser />
         <WhyGloryNest />
-        <ImagineYourStay />
         <BookingSection />
         <WhyGuestsLove />
         <EFundBanner />
