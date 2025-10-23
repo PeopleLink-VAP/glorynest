@@ -225,3 +225,13 @@
     transform: translateX(0) scale(1);
   }
 }
+
+/* Ken Burns Effect - Slow zoom and pan for hero slideshow */
+@keyframes kenBurns {
+  0% {
+    transform: scale(1) translate(0, 0);
+  }
+  100% {
+    transform: scale(1.15) translate(-2%, -2%);
+  }
+}

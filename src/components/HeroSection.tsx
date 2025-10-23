@@ -2,21 +2,56 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { MapPin, Star, Heart, Users, Calendar, Sparkles } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { useState, useEffect } from "react";
 import ContactDialog from "./ContactDialog";
-import villaHero from "@/assets/villa-hero.jpg";
 
 const HeroSection = () => {
   const { t } = useTranslation();
   
+  // Gallery images for slideshow from public/rooms
+  const galleryImages = [
+    { src: "/rooms/entrance.jpg", alt: "Glory Nest entrance - Your perfect family getaway in Hoi An" },
+    { src: "/rooms/living_room.jpg", alt: "Comfortable living room at Glory Nest" },
+    { src: "/rooms/master_bedroom.jpg", alt: "Luxurious master bedroom" },
+    { src: "/rooms/bedroom1.jpg", alt: "Cozy bedroom with natural light" },
+    { src: "/rooms/bedroom2.jpg", alt: "Beautiful second bedroom" },
+    { src: "/rooms/kitchen.jpg", alt: "Fully equipped kitchen for home cooking" },
+    { src: "/rooms/bathroom1.jpg", alt: "Modern bathroom with elegant fixtures" },
+    { src: "/rooms/bathroom2.jpg", alt: "Spacious second bathroom" },
+    { src: "/rooms/court_yard.jpg", alt: "Peaceful courtyard for relaxation" },
+  ];
+
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % galleryImages.length);
+    }, 6000); // Change image every 6 seconds
+
+    return () => clearInterval(interval);
+  }, [galleryImages.length]);
+  
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Hero Image Background */}
+      {/* Ken Burns Slideshow Background */}
       <div className="absolute inset-0">
-        <img 
-          src={villaHero} 
-          alt="Glory Nest Villa - Your perfect family getaway in Hoi An"
-          className="w-full h-full object-cover"
-        />
+        {galleryImages.map((image, index) => (
+          <div
+            key={index}
+            className={`absolute inset-0 transition-opacity duration-2000 ${
+              index === currentImageIndex ? 'opacity-100' : 'opacity-0'
+            }`}
+            style={{
+              animation: index === currentImageIndex ? 'kenBurns 6s ease-in-out forwards' : 'none',
+            }}
+          >
+            <img 
+              src={image.src} 
+              alt={image.alt}
+              className="w-full h-full object-cover"
+            />
+          </div>
+        ))}
         <div className="absolute inset-0 bg-primary/30"></div>
         <div className="absolute inset-0 backdrop-blur-[2px]"></div>
       </div>

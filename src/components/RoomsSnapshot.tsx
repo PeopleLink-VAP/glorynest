@@ -3,8 +3,6 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Users, Heart, Home, Baby, Sparkles } from "lucide-react";
 import ContactDialog from "./ContactDialog";
-import familyPool from "@/assets/family-pool.jpg";
-import honeymoonHoian from "@/assets/honeymoon-hoian.jpg";
 
 const RoomsSnapshot = () => {
   const packages = [
@@ -14,7 +12,7 @@ const RoomsSnapshot = () => {
       sleeps: "Up to 6 guests",
       price: "3,500,000 VND",
       features: ["Kids toys & books", "Pool safety", "Family meals", "Local adventures"],
-      image: familyPool,
+      image: "/rooms/living_room.jpg",
       icon: <Baby className="w-6 h-6" />,
       variant: "family" as const
     },
@@ -24,7 +22,7 @@ const RoomsSnapshot = () => {
       sleeps: "Perfect for 2",
       price: "3,500,000 VND",
       features: ["Romantic setup", "Couples massage", "Private dining", "Sunset tours"],
-      image: honeymoonHoian,
+      image: "/rooms/master_bedroom.jpg",
       icon: <Heart className="w-6 h-6" />,
       variant: "honeymoon" as const
     }

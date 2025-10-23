@@ -21,7 +21,7 @@ export default {
 			fontFamily: {
 				sans: ['Roboto', 'sans-serif'],
 				serif: ['Roboto', 'sans-serif'],
-				display: ['Lavishly Yours', 'cursive'],
+				display: ['Pacifico', 'cursive'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',

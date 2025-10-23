@@ -1,7 +1,4 @@
 import { Sunrise, Coffee, BookOpen, Sunset, Sparkles } from "lucide-react";
-import cozyBreakfast from "@/assets/cozy-breakfast.jpg";
-import homeCooking from "@/assets/home-cooking.jpg";
-import readingCorner from "@/assets/reading-corner.jpg";
 import { getSparrowIcon } from "@/lib/sparrowUtils";
 
 const ImagineYourStay = () => {
@@ -13,21 +10,21 @@ const ImagineYourStay = () => {
       title: "Morning breakfast by the pool",
       description: "Start your day with authentic Vietnamese pho and fresh tropical fruits by your private pool. The sparrows sing as steam rises from your coffee cup.",
       time: "Morning",
-      image: cozyBreakfast
+      image: "/rooms/court_yard.jpg"
     },
     {
       icon: BookOpen,
       title: "Afternoon reading sanctuary",
       description: "Curl up in our cozy reading corner with a good book. Natural light streams through while the garden whispers its peaceful stories.",
       time: "Afternoon", 
-      image: readingCorner
+      image: "/rooms/living_room.jpg"
     },
     {
       icon: Sunset,
       title: "Evening family cooking",
       description: "Join us in the kitchen to learn grandmother's recipes. Share stories and laughter while creating meals that taste like home.",
       time: "Evening",
-      image: homeCooking
+      image: "/rooms/kitchen.jpg"
     }
   ];
 
