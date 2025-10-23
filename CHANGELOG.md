@@ -44,9 +44,9 @@ Updated `src/i18n/locales/en.json` with new copy:
 #### New Page: `/rooms` (Rooms.tsx)
 - **Hero section** with villa image
 - **Overview section** with 5 key features:
-  - 4 Bedrooms, Pool, Kitchen, Outdoor dining, Location
+  - 2 bedrooms, Pool, Kitchen, Outdoor dining, Location
 - **Photo gallery** with 9 room images
-- **Villa layout** statistics (4 beds, 2 baths, 8-10 guests, 1 pool)
+- **Villa layout** statistics (2 beds, 2 baths, 8-10 guests, 1 pool)
 - Includes StickyBookingBar
 
 #### New Component: `StickyBookingBar.tsx`
@@ -99,8 +99,8 @@ Updated `src/i18n/locales/en.json` with new copy:
 ### 7. **SEO & Meta Tags** ✓
 Updated `index.html`:
 - **Title**: "Glory Nest (Chim Bay Bay) - Private 2-bedroom Villa in Hoi An"
-- **Description**: Mentions 4 bedrooms, private pool, 3 generations, E-Fund
-- **Keywords**: Private villa, 4 bedroom, social impact, Ancient Town
+- **Description**: Mentions 2 bedrooms, private pool, 3 generations, E-Fund
+- **Keywords**: Private villa, 2 bedroom, social impact, Ancient Town
 - **OG tags**: Updated images to use room photos
 - **Twitter cards**: Updated with villa messaging
 
@@ -167,7 +167,7 @@ Accent: hsl(35 40% 65%)       /* Soft Sand */
 
 ### From → To
 - **Guesthouse** → **Private 2-bedroom villa**
-- **2 bedrooms** → **4 bedrooms + 8-10 guests**
+- **2 bedrooms** → **2 bedrooms + 8-10 guests**
 - **"Book a room"** → **"Book the entire villa"**
 - **Holiday orange** → **Warm terracotta**
 - **Generic hospitality** → **Multi-generational family legacy**
